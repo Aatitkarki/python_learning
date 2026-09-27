@@ -1,0 +1,36 @@
+services:
+  database:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: learning
+      POSTGRES_USER: learner
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:15432:5432"
+    volumes:
+      - learning_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U learner -d learning"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  api:
+    build:
+      context: .
+      dockerfile: projects/stage10/Dockerfile
+    environment:
+      DATABASE_URL: postgresql://learner:${POSTGRES_PASSWORD}@database:5432/learning
+      COURSE_API_KEYS: ${COURSE_API_KEYS:?Set COURSE_API_KEYS in .env}
+      COURSE_SEED: "1"
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      database:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+volumes:
+  learning_db:

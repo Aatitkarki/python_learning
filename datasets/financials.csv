@@ -1,0 +1,7 @@
+company,year,revenue,operating_income,net_income,operating_cash_flow,capex,shares,assets,liabilities,equity,debt,cost_of_revenue,price,currency,unit,published_at,source_id,tenant
+Aurora,2023,100,15,11.25,18,5,10,200,80,120,40,60.0,20,USD,millions_except_price,2024-03-01,aurora-2023,A
+Aurora,2024,120,24,18.0,25,7,10,220,85,135,40,72.0,22,USD,millions_except_price,2025-03-01,aurora-2024,A
+Aurora,2025,144,36,27.0,32,8,10,240,90,150,40,86.4,24,USD,millions_except_price,2026-03-01,aurora-2025,A
+Beacon,2023,90,9,6.75,12,4,10,200,80,120,40,54.0,20,USD,millions_except_price,2024-03-01,beacon-2023,A
+Beacon,2024,99,12,9.0,14,5,10,220,85,135,40,59.4,22,USD,millions_except_price,2025-03-01,beacon-2024,A
+Beacon,2025,108,15,11.25,18,6,10,240,90,150,40,64.8,24,USD,millions_except_price,2026-03-01,beacon-2025,A

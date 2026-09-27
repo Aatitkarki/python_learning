@@ -1,0 +1,7 @@
+-r core.txt
+psycopg[binary]>=3.2,<4
+pgvector>=0.3,<1
+sentence-transformers>=3,<6
+pypdf>=5,<7
+python-docx>=1.1,<2
+beautifulsoup4>=4.12,<5

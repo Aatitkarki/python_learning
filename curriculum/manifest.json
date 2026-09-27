@@ -1,0 +1,434 @@
+[
+  {
+    "id": "00a",
+    "title": "Your first reproducible experiment",
+    "group": "stdlib",
+    "objectives": [
+      "Run cells in order and restart the kernel",
+      "Distinguish source code, runtime state, and saved output",
+      "Make and explain a small reproducible experiment"
+    ],
+    "practice": "curriculum/notebooks/00a_your_first_reproducible_experiment.ipynb",
+    "solution": "curriculum/solutions/00a_your_first_reproducible_experiment.ipynb"
+  },
+  {
+    "id": "01a",
+    "title": "Variables, decisions, and functions",
+    "group": "stdlib",
+    "objectives": [
+      "Trace variables and return values",
+      "Use conditions and exceptions",
+      "Write reusable functions"
+    ],
+    "practice": "curriculum/notebooks/01a_variables_decisions_and_functions.ipynb",
+    "solution": "curriculum/solutions/01a_variables_decisions_and_functions.ipynb"
+  },
+  {
+    "id": "01b",
+    "title": "Collections, loops, and text",
+    "group": "stdlib",
+    "objectives": [
+      "Select lists, tuples, sets, and dictionaries",
+      "Aggregate records with loops",
+      "Normalize text consistently"
+    ],
+    "practice": "curriculum/notebooks/01b_collections_loops_and_text.ipynb",
+    "solution": "curriculum/solutions/01b_collections_loops_and_text.ipynb"
+  },
+  {
+    "id": "01c",
+    "title": "Files, validation, and money",
+    "group": "stdlib",
+    "objectives": [
+      "Read CSV and JSON safely",
+      "Validate malformed records",
+      "Aggregate dates and exact decimal values"
+    ],
+    "practice": "curriculum/notebooks/01c_files_validation_and_money.ipynb",
+    "solution": "curriculum/solutions/01c_files_validation_and_money.ipynb"
+  },
+  {
+    "id": "01d",
+    "title": "Objects, algorithms, and debugging",
+    "group": "stdlib",
+    "objectives": [
+      "Encapsulate state with a class",
+      "Reason about algorithm cost",
+      "Test a bug before fixing it"
+    ],
+    "practice": "curriculum/notebooks/01d_objects_algorithms_and_debugging.ipynb",
+    "solution": "curriculum/solutions/01d_objects_algorithms_and_debugging.ipynb"
+  },
+  {
+    "id": "02a",
+    "title": "Vectors, matrices, and algebra",
+    "group": "stdlib",
+    "objectives": [
+      "Track dimensions and units",
+      "Implement dot products and cosine similarity",
+      "Explain matrix multiplication and eigenvectors"
+    ],
+    "practice": "curriculum/notebooks/02a_vectors_matrices_and_algebra.ipynb",
+    "solution": "curriculum/solutions/02a_vectors_matrices_and_algebra.ipynb"
+  },
+  {
+    "id": "02b",
+    "title": "Derivatives and optimization",
+    "group": "stdlib",
+    "objectives": [
+      "Approximate and derive gradients",
+      "Implement gradient descent",
+      "Diagnose learning-rate failures"
+    ],
+    "practice": "curriculum/notebooks/02b_derivatives_and_optimization.ipynb",
+    "solution": "curriculum/solutions/02b_derivatives_and_optimization.ipynb"
+  },
+  {
+    "id": "02c",
+    "title": "Probability, statistics, and uncertainty",
+    "group": "stdlib",
+    "objectives": [
+      "Compute sample statistics",
+      "Apply conditional probability and Bayes rule",
+      "Estimate uncertainty with reproducible bootstrap samples"
+    ],
+    "practice": "curriculum/notebooks/02c_probability_statistics_and_uncertainty.ipynb",
+    "solution": "curriculum/solutions/02c_probability_statistics_and_uncertainty.ipynb"
+  },
+  {
+    "id": "03a",
+    "title": "NumPy and Pandas data contracts",
+    "group": "data",
+    "objectives": [
+      "Inspect shapes and broadcasting",
+      "Clean, join, and summarize tabular data",
+      "Preserve provenance and missingness"
+    ],
+    "practice": "curriculum/notebooks/03a_numpy_and_pandas_data_contracts.ipynb",
+    "solution": "curriculum/solutions/03a_numpy_and_pandas_data_contracts.ipynb"
+  },
+  {
+    "id": "03b",
+    "title": "SQL, transactions, and schema design",
+    "group": "stdlib",
+    "objectives": [
+      "Write joins, CTEs, and window queries",
+      "Parameterize user values",
+      "Use transactions and constraints"
+    ],
+    "practice": "curriculum/notebooks/03b_sql_transactions_and_schema_design.ipynb",
+    "solution": "curriculum/solutions/03b_sql_transactions_and_schema_design.ipynb"
+  },
+  {
+    "id": "03c",
+    "title": "HTTP, validation, and FastAPI",
+    "group": "data",
+    "objectives": [
+      "Model request and response contracts",
+      "Test HTTP errors without a live server",
+      "Separate authentication and authorization"
+    ],
+    "practice": "curriculum/notebooks/03c_http_validation_and_fastapi.ipynb",
+    "solution": "curriculum/solutions/03c_http_validation_and_fastapi.ipynb"
+  },
+  {
+    "id": "04a",
+    "title": "Supervised learning without leakage",
+    "group": "data",
+    "objectives": [
+      "Build baselines and pipelines",
+      "Compare regression and classification models",
+      "Separate training, validation, and final testing"
+    ],
+    "practice": "curriculum/notebooks/04a_supervised_learning_without_leakage.ipynb",
+    "solution": "curriculum/solutions/04a_supervised_learning_without_leakage.ipynb"
+  },
+  {
+    "id": "04b",
+    "title": "Metrics, clustering, and error analysis",
+    "group": "data",
+    "objectives": [
+      "Compute precision, recall, and F1",
+      "Choose metrics for the cost of errors",
+      "Explore PCA and clustering without inventing labels"
+    ],
+    "practice": "curriculum/notebooks/04b_metrics_clustering_and_error_analysis.ipynb",
+    "solution": "curriculum/solutions/04b_metrics_clustering_and_error_analysis.ipynb"
+  },
+  {
+    "id": "05a",
+    "title": "A neural network from scratch",
+    "group": "data",
+    "objectives": [
+      "Implement forward and backward passes",
+      "Track matrix dimensions",
+      "Verify gradients before training"
+    ],
+    "practice": "curriculum/notebooks/05a_a_neural_network_from_scratch.ipynb",
+    "solution": "curriculum/solutions/05a_a_neural_network_from_scratch.ipynb"
+  },
+  {
+    "id": "05b",
+    "title": "PyTorch training and image classification",
+    "group": "deep",
+    "objectives": [
+      "Use tensors, autograd, modules, and loaders",
+      "Separate train and evaluation modes",
+      "Train a small CPU image classifier"
+    ],
+    "practice": "curriculum/notebooks/05b_pytorch_training_and_image_classification.ipynb",
+    "solution": "curriculum/solutions/05b_pytorch_training_and_image_classification.ipynb"
+  },
+  {
+    "id": "06a",
+    "title": "Tokens, attention, and decoding",
+    "group": "data",
+    "objectives": [
+      "Implement a tokenizer baseline",
+      "Compute masked scaled dot-product attention",
+      "Explain context, sampling, and model families"
+    ],
+    "practice": "curriculum/notebooks/06a_tokens_attention_and_decoding.ipynb",
+    "solution": "curriculum/solutions/06a_tokens_attention_and_decoding.ipynb"
+  },
+  {
+    "id": "06b",
+    "title": "A tiny causal transformer",
+    "group": "deep",
+    "objectives": [
+      "Shift language-model targets correctly",
+      "Train a causal attention block",
+      "Measure held-out loss and generate tokens"
+    ],
+    "practice": "curriculum/notebooks/06b_a_tiny_causal_transformer.ipynb",
+    "solution": "curriculum/solutions/06b_a_tiny_causal_transformer.ipynb"
+  },
+  {
+    "id": "06c",
+    "title": "Adaptation, extraction, and quantization",
+    "group": "data",
+    "objectives": [
+      "Validate structured model outputs",
+      "Explain and calculate low-rank updates",
+      "Measure quantization error"
+    ],
+    "practice": "curriculum/notebooks/06c_adaptation_extraction_and_quantization.ipynb",
+    "solution": "curriculum/solutions/06c_adaptation_extraction_and_quantization.ipynb"
+  },
+  {
+    "id": "07a",
+    "title": "Retrieval from first principles",
+    "group": "stdlib",
+    "objectives": [
+      "Chunk documents with stable provenance",
+      "Rank keyword matches",
+      "Measure retrieval separately from answers"
+    ],
+    "practice": "curriculum/notebooks/07a_retrieval_from_first_principles.ipynb",
+    "solution": "curriculum/solutions/07a_retrieval_from_first_principles.ipynb"
+  },
+  {
+    "id": "07b",
+    "title": "Grounding, permissions, and vector search",
+    "group": "data",
+    "objectives": [
+      "Filter access before ranking",
+      "Return traceable citations and abstentions",
+      "Use actual embeddings and pgvector in the project"
+    ],
+    "practice": "curriculum/notebooks/07b_grounding_permissions_and_vector_search.ipynb",
+    "solution": "curriculum/solutions/07b_grounding_permissions_and_vector_search.ipynb"
+  },
+  {
+    "id": "08a",
+    "title": "Tools and bounded workflows",
+    "group": "stdlib",
+    "objectives": [
+      "Validate tool names and arguments",
+      "Separate decisions from execution",
+      "Bound retries, steps, and side effects"
+    ],
+    "practice": "curriculum/notebooks/08a_tools_and_bounded_workflows.ipynb",
+    "solution": "curriculum/solutions/08a_tools_and_bounded_workflows.ipynb"
+  },
+  {
+    "id": "08b",
+    "title": "LangGraph state and human review",
+    "group": "agents",
+    "objectives": [
+      "Translate a workflow into nodes and edges",
+      "Use explicit typed state",
+      "Compare framework and plain-Python behavior"
+    ],
+    "practice": "curriculum/notebooks/08b_langgraph_state_and_human_review.ipynb",
+    "solution": "curriculum/solutions/08b_langgraph_state_and_human_review.ipynb"
+  },
+  {
+    "id": "09a",
+    "title": "Memory and serving performance",
+    "group": "stdlib",
+    "objectives": [
+      "Estimate weight and KV memory",
+      "Distinguish latency from throughput",
+      "Use measurements to choose serving settings"
+    ],
+    "practice": "curriculum/notebooks/09a_memory_and_serving_performance.ipynb",
+    "solution": "curriculum/solutions/09a_memory_and_serving_performance.ipynb"
+  },
+  {
+    "id": "09b",
+    "title": "Local model API contracts",
+    "group": "stdlib",
+    "objectives": [
+      "Build request/response adapters",
+      "Apply explicit timeouts and output limits",
+      "Benchmark real model calls separately from offline checks"
+    ],
+    "practice": "curriculum/notebooks/09b_local_model_api_contracts.ipynb",
+    "solution": "curriculum/solutions/09b_local_model_api_contracts.ipynb"
+  },
+  {
+    "id": "10a",
+    "title": "Reliability and observability",
+    "group": "stdlib",
+    "objectives": [
+      "Define service-level indicators",
+      "Design idempotent writes and safe logs",
+      "Plan timeout and dependency failure behavior"
+    ],
+    "practice": "curriculum/notebooks/10a_reliability_and_observability.ipynb",
+    "solution": "curriculum/solutions/10a_reliability_and_observability.ipynb"
+  },
+  {
+    "id": "10b",
+    "title": "Containers, configuration, and deployment",
+    "group": "stdlib",
+    "objectives": [
+      "Explain image/container/network/volume boundaries",
+      "Validate runtime configuration",
+      "Design release and rollback evidence"
+    ],
+    "practice": "curriculum/notebooks/10b_containers_configuration_and_deployment.ipynb",
+    "solution": "curriculum/solutions/10b_containers_configuration_and_deployment.ipynb"
+  },
+  {
+    "id": "11a",
+    "title": "Distributed data and associative aggregation",
+    "group": "stdlib",
+    "objectives": [
+      "Compute mergeable summaries",
+      "Recognize shuffle and skew",
+      "Choose analytical storage formats"
+    ],
+    "practice": "curriculum/notebooks/11a_distributed_data_and_associative_aggregation.ipynb",
+    "solution": "curriculum/solutions/11a_distributed_data_and_associative_aggregation.ipynb"
+  },
+  {
+    "id": "11b",
+    "title": "PySpark DataFrames and windows",
+    "group": "spark",
+    "objectives": [
+      "Create a real Spark session",
+      "Aggregate and window typed records",
+      "Read and write Parquet with validation"
+    ],
+    "practice": "curriculum/notebooks/11b_pyspark_dataframes_and_windows.ipynb",
+    "solution": "curriculum/solutions/11b_pyspark_dataframes_and_windows.ipynb"
+  },
+  {
+    "id": "12a",
+    "title": "Threat models and untrusted content",
+    "group": "stdlib",
+    "objectives": [
+      "Identify assets and trust boundaries",
+      "Map AI risks to enforceable controls",
+      "Treat retrieved text as data"
+    ],
+    "practice": "curriculum/notebooks/12a_threat_models_and_untrusted_content.ipynb",
+    "solution": "curriculum/solutions/12a_threat_models_and_untrusted_content.ipynb"
+  },
+  {
+    "id": "12b",
+    "title": "Authorization, caches, and isolation",
+    "group": "stdlib",
+    "objectives": [
+      "Test direct-object access",
+      "Scope cache and state keys",
+      "Prevent identity spoofing through content"
+    ],
+    "practice": "curriculum/notebooks/12b_authorization_caches_and_isolation.ipynb",
+    "solution": "curriculum/solutions/12b_authorization_caches_and_isolation.ipynb"
+  },
+  {
+    "id": "13a",
+    "title": "Evaluation datasets and retrieval metrics",
+    "group": "stdlib",
+    "objectives": [
+      "Define labeled evaluation cases",
+      "Calculate recall, precision, and reciprocal rank",
+      "Separate component and end-to-end quality"
+    ],
+    "practice": "curriculum/notebooks/13a_evaluation_datasets_and_retrieval_metrics.ipynb",
+    "solution": "curriculum/solutions/13a_evaluation_datasets_and_retrieval_metrics.ipynb"
+  },
+  {
+    "id": "13b",
+    "title": "Regression gates and uncertainty",
+    "group": "stdlib",
+    "objectives": [
+      "Compare candidates on paired cases",
+      "Protect safety and weak slices",
+      "Record reproducible release decisions"
+    ],
+    "practice": "curriculum/notebooks/13b_regression_gates_and_uncertainty.ipynb",
+    "solution": "curriculum/solutions/13b_regression_gates_and_uncertainty.ipynb"
+  },
+  {
+    "id": "14a",
+    "title": "Financial statements and ratios",
+    "group": "stdlib",
+    "objectives": [
+      "Reconcile statement identities",
+      "Compute ratios with units and period definitions",
+      "Handle undefined or misleading ratios"
+    ],
+    "practice": "curriculum/notebooks/14a_financial_statements_and_ratios.ipynb",
+    "solution": "curriculum/solutions/14a_financial_statements_and_ratios.ipynb"
+  },
+  {
+    "id": "14b",
+    "title": "Time series and honest backtests",
+    "group": "data",
+    "objectives": [
+      "Build lagged features using past information",
+      "Use chronological and walk-forward splits",
+      "Account for publication times and transaction costs"
+    ],
+    "practice": "curriculum/notebooks/14b_time_series_and_honest_backtests.ipynb",
+    "solution": "curriculum/solutions/14b_time_series_and_honest_backtests.ipynb"
+  },
+  {
+    "id": "15a",
+    "title": "An evidence-backed financial research pipeline",
+    "group": "stdlib",
+    "objectives": [
+      "Connect authorized retrieval and deterministic calculation",
+      "Preserve provenance across steps",
+      "Return explicit missing-data outcomes"
+    ],
+    "practice": "curriculum/notebooks/15a_an_evidence-backed_financial_research_pipeline.ipynb",
+    "solution": "curriculum/solutions/15a_an_evidence-backed_financial_research_pipeline.ipynb"
+  },
+  {
+    "id": "15b",
+    "title": "Architecture review and mastery defense",
+    "group": "stdlib",
+    "objectives": [
+      "Trace failures across system boundaries",
+      "Make explicit reliability and cost tradeoffs",
+      "Demonstrate independent transfer"
+    ],
+    "practice": "curriculum/notebooks/15b_architecture_review_and_mastery_defense.ipynb",
+    "solution": "curriculum/solutions/15b_architecture_review_and_mastery_defense.ipynb"
+  }
+]

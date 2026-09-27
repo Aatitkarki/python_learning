@@ -1,0 +1,3 @@
+-r core.txt
+langgraph>=1,<2
+langchain-core>=1,<2

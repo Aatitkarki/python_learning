@@ -1,0 +1,69 @@
+[
+  {
+    "module": "stage00.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage01.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage02.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage03.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage04.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage05.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage05.numpy_xor",
+    "status": "passed"
+  },
+  {
+    "module": "stage06.tiny_lm",
+    "status": "passed"
+  },
+  {
+    "module": "stage07.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage08.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage12.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage13.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage14.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage15.solution",
+    "status": "passed"
+  },
+  {
+    "module": "stage08.research",
+    "status": "passed",
+    "evidence": "CLI output in work/research-workflow.json and boundary tests"
+  },
+  {
+    "module": "stage06.pretrained --offline-smoke",
+    "status": "passed",
+    "loss": 1.098720669746399,
+    "trainable_parameters": 307
+  }
+]

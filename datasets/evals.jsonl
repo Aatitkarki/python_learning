@@ -1,0 +1,9 @@
+{"id": "q-aurora-2023", "tenant": "A", "query": "Aurora 2023 revenue", "relevant_ids": ["aurora-2023"], "category": "financial", "split": "dev"}
+{"id": "q-aurora-2024", "tenant": "A", "query": "Aurora 2024 revenue", "relevant_ids": ["aurora-2024"], "category": "financial", "split": "dev"}
+{"id": "q-aurora-2025", "tenant": "A", "query": "Aurora 2025 revenue", "relevant_ids": ["aurora-2025"], "category": "financial", "split": "holdout"}
+{"id": "q-beacon-2023", "tenant": "A", "query": "Beacon 2023 revenue", "relevant_ids": ["beacon-2023"], "category": "financial", "split": "dev"}
+{"id": "q-beacon-2024", "tenant": "A", "query": "Beacon 2024 revenue", "relevant_ids": ["beacon-2024"], "category": "financial", "split": "dev"}
+{"id": "q-beacon-2025", "tenant": "A", "query": "Beacon 2025 revenue", "relevant_ids": ["beacon-2025"], "category": "financial", "split": "holdout"}
+{"id": "q-policy", "tenant": "B", "query": "expense receipts days", "relevant_ids": ["policy-public"], "category": "public", "split": "dev"}
+{"id": "q-unknown", "tenant": "A", "query": "zebras on Jupiter", "relevant_ids": [], "category": "unsupported", "split": "holdout"}
+{"id": "q-denied", "tenant": "A", "query": "Cedar merger", "relevant_ids": [], "category": "permission", "split": "holdout"}

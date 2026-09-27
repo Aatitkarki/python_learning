@@ -1,0 +1,37 @@
+id,text,label,group,split
+access-0,I cannot login with my password,access,access-template-0,train
+access-1,Please reset my account credentials,access,access-template-1,train
+access-2,The sign in screen rejects my login,access,access-template-2,train
+access-3,My account is locked after password attempts,access,access-template-3,train
+access-4,Two factor authentication blocks access,access,access-template-4,train
+access-5,I need help recovering my account,access,access-template-5,train
+access-6,Password reset email never arrived,access,access-template-6,train
+access-7,The login verification code expired,access,access-template-7,train
+access-8,Cannot access account after changing phone,access,access-template-8,validation
+access-9,Authentication fails with the new password,access,access-template-9,validation
+access-10,Sign in says my credentials are incorrect,access,access-template-10,test
+access-11,Unlock my account so I can login,access,access-template-11,test
+billing-0,My invoice has an incorrect charge,billing,billing-template-0,train
+billing-1,Please refund the duplicate payment,billing,billing-template-1,train
+billing-2,The billing amount is wrong this month,billing,billing-template-2,train
+billing-3,How do I update my payment card,billing,billing-template-3,train
+billing-4,I need a receipt for the subscription charge,billing,billing-template-4,train
+billing-5,Cancel the renewal and refund my payment,billing,billing-template-5,train
+billing-6,Invoice tax was charged twice,billing,billing-template-6,train
+billing-7,The card payment failed during renewal,billing,billing-template-7,train
+billing-8,A duplicate subscription charge appeared,billing,billing-template-8,validation
+billing-9,Please explain the amount on my invoice,billing,billing-template-9,validation
+billing-10,I was charged after cancelling billing,billing,billing-template-10,test
+billing-11,Can you send a payment receipt,billing,billing-template-11,test
+technical-0,The application crashes when opening files,technical,technical-template-0,train
+technical-1,An error appears while uploading data,technical,technical-template-1,train
+technical-2,The export feature freezes the application,technical,technical-template-2,train
+technical-3,Images fail to load in the dashboard,technical,technical-template-3,train
+technical-4,The server returns an error on file upload,technical,technical-template-4,train
+technical-5,The app becomes slow when exporting files,technical,technical-template-5,train
+technical-6,Dashboard charts are blank after loading,technical,technical-template-6,train
+technical-7,The upload progress stops with an error,technical,technical-template-7,train
+technical-8,Opening the report crashes the browser,technical,technical-template-8,validation
+technical-9,The download link returns a server error,technical,technical-template-9,validation
+technical-10,Search results freeze the application,technical,technical-template-10,test
+technical-11,The page is slow and images do not load,technical,technical-template-11,test
