@@ -1,5 +1,9 @@
 # Stage 12 project — Threat model and adversarial test suite
 
+<!-- question-answer-index -->
+**Looking for a particular answer?** [Question-by-question solutions](SOLUTIONS.md) includes notebook exercises, explanations, independent assignments, and project tasks.
+
+
 [Stage study guide](../../curriculum/stages/12.md) · [Course plan](../../curriculum/PLAN.md)
 
 **Scenario:** You own a small component of a private research platform. A teammate must be able to reproduce it, inspect its evidence, and understand its failure behavior.

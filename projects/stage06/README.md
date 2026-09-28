@@ -1,5 +1,9 @@
 # Stage 06 project — Tiny language model, pretrained classifier, and extraction
 
+<!-- question-answer-index -->
+**Looking for a particular answer?** [Question-by-question solutions](SOLUTIONS.md) includes notebook exercises, explanations, independent assignments, and project tasks.
+
+
 [Stage study guide](../../curriculum/stages/06.md) · [Course plan](../../curriculum/PLAN.md)
 
 **Scenario:** You own a small component of a private research platform. A teammate must be able to reproduce it, inspect its evidence, and understand its failure behavior.

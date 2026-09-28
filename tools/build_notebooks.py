@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'curriculum/authoring'))
 import foundations, models, systems, advanced
 from schema import LESSONS
+from notebook_supplements import concept_cell, assignment_cell
 
 SETUP = '''from pathlib import Path
 import sys
@@ -44,7 +45,7 @@ def notebook(item, solved):
     instructions = ('Compare reasoning as well as output. Close this file and repeat with changed inputs after 48 hours.' if solved else
         'Read the lesson and run the example. Implement each TODO, then run its checks. A NotImplementedError is expected until you write your answer. Try for 20–30 minutes before opening a hint; open the solution only after recording an attempt. Copy this notebook into work/ to keep your own version.')
     cells=[cell('markdown', title+'\n\n'+instructions+'\n\n**Prerequisites:** earlier lessons in the course order. **Environment:** '+GROUPS[item['group']]+ '\n\n[Stage guide](../stages/'+stage+'.md) · [Course map](../PLAN.md) · [Project](../../projects/stage'+stage+'/README.md)\n\n**Notebook time:** 2–4 hours for an initial pass; project, reading, retrieval practice, and independent transfer use the rest of the stage budget.\n\nLearning objectives:\n\n'+'\n'.join('- '+x for x in item['objectives'])),
-        cell('code', SETUP, ['setup']), cell('markdown','## Lesson\n\n'+item['theory']),
+        cell('code', SETUP, ['setup']), concept_cell(id, 'curriculum/notebooks/placeholder.ipynb'), cell('markdown','## Lesson\n\n'+item['theory']),
         cell('markdown','## Worked example\n\nPredict the output before running. Change one input and explain the result.'),cell('code',item['example'],['example'])]
     for i,e in enumerate(item['exercises'],1):
         cells += [cell('markdown', f'## Exercise {i}: {e["title"]}\n\n{e["task"]}\n\nWrite down one normal case, one boundary case, and one invalid case before coding.'),
@@ -52,6 +53,7 @@ def notebook(item, solved):
                   cell('code',e['checks']+f'\nprint("Exercise {i}: checks passed")',['check'])]
         cells.append(cell('markdown', ('**Why this works:** '+e['why']) if solved else '<details><summary>Hint — open after trying</summary>\n\n'+e['hint']+'\n\n</details>'))
     cells.append(cell('markdown','## Independent transfer\n\n'+item['transfer']+'\n\nRecord your implementation, errors, measurements, and explanation in work/. See the project’s ANSWERS.md after attempting the brief.'))
+    cells.append(assignment_cell(id))
     oral='## Explain without code\n\n'+'\n\n'.join(f'{i}. {q}'+ ('\n\n   '+a if solved else '') for i,(q,a) in enumerate(item['oral'],1))
     cells.append(cell('markdown',oral))
     cells.append(cell('markdown','## Reading and review\n\n'+'\n'.join(f'- [Primary reference {i}]({url})' for i,url in enumerate(item['reading'],1))+'\n\nAfter 2, 7, and 30 days: explain the concept from memory, solve a changed-input version, and log any gaps in progress.md.'))

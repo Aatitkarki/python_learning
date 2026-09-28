@@ -1,0 +1,3069 @@
+[
+  {
+    "id": "00a-E1",
+    "kind": "exercise",
+    "stage": "00",
+    "question": "Return total hours for nonnegative weeks and hours_per_week; reject negative inputs.",
+    "answer": "curriculum/answers/00a.md#00a-e1",
+    "implementations": [
+      "projects/stage00/notebook_solutions/00a.py"
+    ]
+  },
+  {
+    "id": "00a-E2",
+    "kind": "exercise",
+    "stage": "00",
+    "question": "Return a dictionary containing seed and Python version (under keys seed, python). Import sys inside your function.",
+    "answer": "curriculum/answers/00a.md#00a-e2",
+    "implementations": [
+      "projects/stage00/notebook_solutions/00a.py"
+    ]
+  },
+  {
+    "id": "00a-E3",
+    "kind": "exercise",
+    "stage": "00",
+    "question": "Return n integer die rolls using a private random.Random(seed).",
+    "answer": "curriculum/answers/00a.md#00a-e3",
+    "implementations": [
+      "projects/stage00/notebook_solutions/00a.py"
+    ]
+  },
+  {
+    "id": "00a-O1",
+    "kind": "oral",
+    "stage": "00",
+    "question": "Why restart a kernel?",
+    "answer": "curriculum/answers/00a.md#00a-o1",
+    "implementations": []
+  },
+  {
+    "id": "00a-O2",
+    "kind": "oral",
+    "stage": "00",
+    "question": "Is a notebook a deployed service?",
+    "answer": "curriculum/answers/00a.md#00a-o2",
+    "implementations": []
+  },
+  {
+    "id": "00a-T",
+    "kind": "transfer",
+    "stage": "00",
+    "question": "Create work/hello.py, run it from the terminal, then reproduce it in a fresh notebook. Make a Git commit in your own learning repository and explain the diff.",
+    "answer": "curriculum/answers/00a.md#00a-t",
+    "implementations": [
+      "projects/stage00/hello.py"
+    ]
+  },
+  {
+    "id": "01a-E1",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Return (sell-buy)*shares. Require shares > 0 and prices >= 0.",
+    "answer": "curriculum/answers/01a.md#01a-e1",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01a.py"
+    ]
+  },
+  {
+    "id": "01a-E2",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Support +, -, *, /. Reject unknown operators with ValueError and division by zero with ZeroDivisionError.",
+    "answer": "curriculum/answers/01a.md#01a-e2",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01a.py"
+    ]
+  },
+  {
+    "id": "01a-E3",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Orders >= 100 ship free; smaller nonnegative orders cost 5. A negative total raises ValueError.",
+    "answer": "curriculum/answers/01a.md#01a-e3",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01a.py"
+    ]
+  },
+  {
+    "id": "01a-O1",
+    "kind": "oral",
+    "stage": "01",
+    "question": "Why return instead of print?",
+    "answer": "curriculum/answers/01a.md#01a-o1",
+    "implementations": []
+  },
+  {
+    "id": "01a-O2",
+    "kind": "oral",
+    "stage": "01",
+    "question": "What is scope?",
+    "answer": "curriculum/answers/01a.md#01a-o2",
+    "implementations": []
+  },
+  {
+    "id": "01a-T",
+    "kind": "transfer",
+    "stage": "01",
+    "question": "Build a terminal calculator and temperature converter with a loop. Handle invalid numeric input without hiding programming errors. Add five tests per function.",
+    "answer": "curriculum/answers/01a.md#01a-t",
+    "implementations": [
+      "projects/stage01/calculator.py",
+      "tests/test_answer_labs.py"
+    ]
+  },
+  {
+    "id": "01b-E1",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Count lowercase words matching [a-z]+; return a dictionary. Empty text returns {}.",
+    "answer": "curriculum/answers/01b.md#01b-e1",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01b.py"
+    ]
+  },
+  {
+    "id": "01b-E2",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Return the first occurrence of each hashable item, preserving input order.",
+    "answer": "curriculum/answers/01b.md#01b-e2",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01b.py"
+    ]
+  },
+  {
+    "id": "01b-E3",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Return a new dictionary with deltas applied. Reject a resulting negative count. Do not change the original.",
+    "answer": "curriculum/answers/01b.md#01b-e3",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01b.py"
+    ]
+  },
+  {
+    "id": "01b-O1",
+    "kind": "oral",
+    "stage": "01",
+    "question": "When is a set unsuitable?",
+    "answer": "curriculum/answers/01b.md#01b-o1",
+    "implementations": []
+  },
+  {
+    "id": "01b-O2",
+    "kind": "oral",
+    "stage": "01",
+    "question": "Why copy an input dictionary?",
+    "answer": "curriculum/answers/01b.md#01b-o2",
+    "implementations": []
+  },
+  {
+    "id": "01b-T",
+    "kind": "transfer",
+    "stage": "01",
+    "question": "Build a contact book with add, search, update, delete, and duplicate handling. Add a text analyzer that reports characters, word count, unique words, and deterministic top words.",
+    "answer": "curriculum/answers/01b.md#01b-t",
+    "implementations": [
+      "projects/stage01/contacts.py",
+      "projects/stage01/text_analyzer.py",
+      "projects/stage01/inventory.py"
+    ]
+  },
+  {
+    "id": "01c-E1",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Parse a string as a finite, nonnegative Decimal; raise ValueError on invalid inputs including NaN.",
+    "answer": "curriculum/answers/01c.md#01c-e1",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01c.py"
+    ]
+  },
+  {
+    "id": "01c-E2",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "For CSV text with date,category,amount, return total Decimal and by_category dict. Validate ISO dates and nonblank categories; use parse_amount.",
+    "answer": "curriculum/answers/01c.md#01c-e2",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01c.py"
+    ]
+  },
+  {
+    "id": "01c-E3",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Serialize a total Decimal and currency into JSON strings, using keys total and currency. Preserve the decimal text.",
+    "answer": "curriculum/answers/01c.md#01c-e3",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01c.py"
+    ]
+  },
+  {
+    "id": "01c-O1",
+    "kind": "oral",
+    "stage": "01",
+    "question": "Why not split CSV manually?",
+    "answer": "curriculum/answers/01c.md#01c-o1",
+    "implementations": []
+  },
+  {
+    "id": "01c-O2",
+    "kind": "oral",
+    "stage": "01",
+    "question": "What is a useful error message?",
+    "answer": "curriculum/answers/01c.md#01c-o2",
+    "implementations": []
+  },
+  {
+    "id": "01c-T",
+    "kind": "transfer",
+    "stage": "01",
+    "question": "Build the expense CLI in Stage 01: total, category/month summaries, mean, maximum, and bad-row diagnostics. Use a temporary directory for file tests.",
+    "answer": "curriculum/answers/01c.md#01c-t",
+    "implementations": [
+      "projects/stage01/solution.py",
+      "projects/stage01/expense_app/cli.py",
+      "tests/test_projects.py",
+      "tests/test_answer_labs.py"
+    ]
+  },
+  {
+    "id": "01d-E1",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Implement Inventory with fresh per-instance items and add(name, quantity); quantity must be positive.",
+    "answer": "curriculum/answers/01d.md#01d-e1",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01d.py"
+    ]
+  },
+  {
+    "id": "01d-E2",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "For sorted ascending values, return an index of target, else -1. Use an iterative halving algorithm.",
+    "answer": "curriculum/answers/01d.md#01d-e2",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01d.py"
+    ]
+  },
+  {
+    "id": "01d-E3",
+    "kind": "exercise",
+    "stage": "01",
+    "question": "Return the arithmetic mean of values. Empty input raises ValueError; do not divide by len(values)-1.",
+    "answer": "curriculum/answers/01d.md#01d-e3",
+    "implementations": [
+      "projects/stage01/notebook_solutions/01d.py"
+    ]
+  },
+  {
+    "id": "01d-O1",
+    "kind": "oral",
+    "stage": "01",
+    "question": "Why prefer composition here?",
+    "answer": "curriculum/answers/01d.md#01d-o1",
+    "implementations": []
+  },
+  {
+    "id": "01d-O2",
+    "kind": "oral",
+    "stage": "01",
+    "question": "What must a recursive function have?",
+    "answer": "curriculum/answers/01d.md#01d-o2",
+    "implementations": []
+  },
+  {
+    "id": "01d-T",
+    "kind": "transfer",
+    "stage": "01",
+    "question": "Refactor the expense analyzer into parser, domain, and CLI modules. Add pytest tests, one mock for a file failure, logging, a recursive directory-size exercise, and a measured linear-versus-binary search experiment.",
+    "answer": "curriculum/answers/01d.md#01d-t",
+    "implementations": [
+      "projects/stage01/expense_app/parser.py",
+      "projects/stage01/expense_app/domain.py",
+      "projects/stage01/expense_app/cli.py",
+      "projects/stage01/algorithms.py",
+      "tests/test_answer_labs.py"
+    ]
+  },
+  {
+    "id": "02a-E1",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Return sum(a_i*b_i); reject unequal lengths.",
+    "answer": "curriculum/answers/02a.md#02a-e1",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02a.py"
+    ]
+  },
+  {
+    "id": "02a-E2",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Use dot to return cosine similarity; reject a zero vector.",
+    "answer": "curriculum/answers/02a.md#02a-e2",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02a.py"
+    ]
+  },
+  {
+    "id": "02a-E3",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Multiply nonempty rectangular nested lists. Validate rectangularity and inner dimensions.",
+    "answer": "curriculum/answers/02a.md#02a-e3",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02a.py"
+    ]
+  },
+  {
+    "id": "02a-O1",
+    "kind": "oral",
+    "stage": "02",
+    "question": "What does a dot product measure?",
+    "answer": "curriculum/answers/02a.md#02a-o1",
+    "implementations": []
+  },
+  {
+    "id": "02a-O2",
+    "kind": "oral",
+    "stage": "02",
+    "question": "Why does shape matter?",
+    "answer": "curriculum/answers/02a.md#02a-o2",
+    "implementations": []
+  },
+  {
+    "id": "02a-T",
+    "kind": "transfer",
+    "stage": "02",
+    "question": "Implement vector addition, transpose, norms, distances, and a 2D rotation. Draw original/transformed vectors. Check an eigenvector for diagonal matrix diag(2,3). Repeat using NumPy in Stage 03.",
+    "answer": "curriculum/answers/02a.md#02a-t",
+    "implementations": [
+      "projects/stage02/math_lab.py"
+    ]
+  },
+  {
+    "id": "02b-E1",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Approximate f prime at x using a central difference with h > 0.",
+    "answer": "curriculum/answers/02b.md#02b-e1",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02b.py"
+    ]
+  },
+  {
+    "id": "02b-E2",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Return the MSE gradient for scalar w on equally sized nonempty xs, ys.",
+    "answer": "curriculum/answers/02b.md#02b-e2",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02b.py"
+    ]
+  },
+  {
+    "id": "02b-E3",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Start at w=0, apply steps gradient updates, and return w. Defaults should fit y=2x.",
+    "answer": "curriculum/answers/02b.md#02b-e3",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02b.py"
+    ]
+  },
+  {
+    "id": "02b-O1",
+    "kind": "oral",
+    "stage": "02",
+    "question": "What does the chain rule do?",
+    "answer": "curriculum/answers/02b.md#02b-o1",
+    "implementations": []
+  },
+  {
+    "id": "02b-O2",
+    "kind": "oral",
+    "stage": "02",
+    "question": "Does low training loss imply good predictions?",
+    "answer": "curriculum/answers/02b.md#02b-o2",
+    "implementations": []
+  },
+  {
+    "id": "02b-T",
+    "kind": "transfer",
+    "stage": "02",
+    "question": "Add an intercept, L2 regularization, and loss history. Compare rates 0.001, 0.05, and 1.0. Explain divergence from the update equation; save a loss plot.",
+    "answer": "curriculum/answers/02b.md#02b-t",
+    "implementations": [
+      "projects/stage02/math_lab.py",
+      "projects/stage02/solution.py"
+    ]
+  },
+  {
+    "id": "02c-E1",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Compute unbiased sample variance for n >= 2; reject smaller samples.",
+    "answer": "curriculum/answers/02c.md#02c-e1",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02c.py"
+    ]
+  },
+  {
+    "id": "02c-E2",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Return P(event|positive) from prevalence, sensitivity, and false_positive_rate in [0,1]. Reject an impossible positive event.",
+    "answer": "curriculum/answers/02c.md#02c-e2",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02c.py"
+    ]
+  },
+  {
+    "id": "02c-E3",
+    "kind": "exercise",
+    "stage": "02",
+    "question": "Return the 2.5th and 97.5th percentile order statistics of 1000 bootstrap means using seed=42. Require nonempty data.",
+    "answer": "curriculum/answers/02c.md#02c-e3",
+    "implementations": [
+      "projects/stage02/notebook_solutions/02c.py"
+    ]
+  },
+  {
+    "id": "02c-O1",
+    "kind": "oral",
+    "stage": "02",
+    "question": "What is a base-rate error?",
+    "answer": "curriculum/answers/02c.md#02c-o1",
+    "implementations": []
+  },
+  {
+    "id": "02c-O2",
+    "kind": "oral",
+    "stage": "02",
+    "question": "Why is correlation insufficient for causation?",
+    "answer": "curriculum/answers/02c.md#02c-o2",
+    "implementations": []
+  },
+  {
+    "id": "02c-T",
+    "kind": "transfer",
+    "stage": "02",
+    "question": "Simulate 10,000 Bernoulli trials, plot a binomial count histogram, calculate percentiles/covariance/correlation, and run a permutation test of a mean difference. Explain sampling bias and multiple testing.",
+    "answer": "curriculum/answers/02c.md#02c-t",
+    "implementations": [
+      "projects/stage02/math_lab.py"
+    ]
+  },
+  {
+    "id": "03a-E1",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Standardize each column using population std. Constant columns become zeros. Return a NumPy array.",
+    "answer": "curriculum/answers/03a.md#03a-e1",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03a.py"
+    ]
+  },
+  {
+    "id": "03a-E2",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Parse dates and amounts, group by calendar month string YYYY-MM, return a sorted Series. Use a copied frame.",
+    "answer": "curriculum/answers/03a.md#03a-e2",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03a.py"
+    ]
+  },
+  {
+    "id": "03a-E3",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Left-join orders and customers on customer_id; enforce many-to-one and preserve row count.",
+    "answer": "curriculum/answers/03a.md#03a-e3",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03a.py"
+    ]
+  },
+  {
+    "id": "03a-O1",
+    "kind": "oral",
+    "stage": "03",
+    "question": "What is broadcasting?",
+    "answer": "curriculum/answers/03a.md#03a-o1",
+    "implementations": []
+  },
+  {
+    "id": "03a-O2",
+    "kind": "oral",
+    "stage": "03",
+    "question": "Why validate a join?",
+    "answer": "curriculum/answers/03a.md#03a-o2",
+    "implementations": []
+  },
+  {
+    "id": "03a-T",
+    "kind": "transfer",
+    "stage": "03",
+    "question": "Profile missing values, duplicates, date ranges, and outliers in expenses.csv. Write a cleaning report and a three-day rolling mean. Explain every exclusion.",
+    "answer": "curriculum/answers/03a.md#03a-t",
+    "implementations": [
+      "projects/stage03/data_lab.py"
+    ]
+  },
+  {
+    "id": "03b-E1",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Return (id,amount) rows for a customer ordered by id, using SQL parameters.",
+    "answer": "curriculum/answers/03b.md#03b-e1",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03b.py"
+    ]
+  },
+  {
+    "id": "03b-E2",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Return (id,running_amount) per customer, ordered by id. Use SUM OVER with an explicit ROWS frame.",
+    "answer": "curriculum/answers/03b.md#03b-e2",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03b.py"
+    ]
+  },
+  {
+    "id": "03b-E3",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Insert rows inside a transaction; any duplicate key rolls back the entire batch.",
+    "answer": "curriculum/answers/03b.md#03b-e3",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03b.py"
+    ]
+  },
+  {
+    "id": "03b-O1",
+    "kind": "oral",
+    "stage": "03",
+    "question": "Why a LEFT JOIN?",
+    "answer": "curriculum/answers/03b.md#03b-o1",
+    "implementations": []
+  },
+  {
+    "id": "03b-O2",
+    "kind": "oral",
+    "stage": "03",
+    "question": "Are indexes free?",
+    "answer": "curriculum/answers/03b.md#03b-o2",
+    "implementations": []
+  },
+  {
+    "id": "03b-T",
+    "kind": "transfer",
+    "stage": "03",
+    "question": "Design customers, records, and categories tables with keys; write INNER/LEFT joins, CTE, HAVING, UNION, and correlated subquery examples. Use PostgreSQL EXPLAIN before/after an index and demonstrate rollback.",
+    "answer": "curriculum/answers/03b.md#03b-t",
+    "implementations": [
+      "projects/stage03/queries.sql",
+      "projects/stage03/ingest.py"
+    ]
+  },
+  {
+    "id": "03c-E1",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Define Record(BaseModel) with category length 1..50 and amount finite >=0.",
+    "answer": "curriculum/answers/03c.md#03c-e1",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03c.py"
+    ]
+  },
+  {
+    "id": "03c-E2",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Write make_app() with POST /records returning the validated record with status 201.",
+    "answer": "curriculum/answers/03c.md#03c-e2",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03c.py"
+    ]
+  },
+  {
+    "id": "03c-E3",
+    "kind": "exercise",
+    "stage": "03",
+    "question": "Return a slice for offset>=0 and 1<=limit<=100; reject other bounds.",
+    "answer": "curriculum/answers/03c.md#03c-e3",
+    "implementations": [
+      "projects/stage03/notebook_solutions/03c.py"
+    ]
+  },
+  {
+    "id": "03c-O1",
+    "kind": "oral",
+    "stage": "03",
+    "question": "What does 422 mean here?",
+    "answer": "curriculum/answers/03c.md#03c-o1",
+    "implementations": []
+  },
+  {
+    "id": "03c-O2",
+    "kind": "oral",
+    "stage": "03",
+    "question": "Why inject a database session?",
+    "answer": "curriculum/answers/03c.md#03c-o2",
+    "implementations": []
+  },
+  {
+    "id": "03c-T",
+    "kind": "transfer",
+    "stage": "03",
+    "question": "Build Stage 03’s persistent API with GET /records, /summary, /statistics and POST /records. Add auth, request IDs, tests, and PostgreSQL ingestion. Restart it and prove persistence.",
+    "answer": "curriculum/answers/03c.md#03c-t",
+    "implementations": [
+      "projects/stage03/ingest.py",
+      "projects/stage03/solution.py",
+      "projects/api.py",
+      "projects/stage10/RUNBOOK.md"
+    ]
+  },
+  {
+    "id": "04a-E1",
+    "kind": "exercise",
+    "stage": "04",
+    "question": "Predict the training-label mean for every test item. Reject empty training labels.",
+    "answer": "curriculum/answers/04a.md#04a-e1",
+    "implementations": [
+      "projects/stage04/notebook_solutions/04a.py"
+    ]
+  },
+  {
+    "id": "04a-E2",
+    "kind": "exercise",
+    "stage": "04",
+    "question": "Return an unfitted TF-IDF + LogisticRegression pipeline with max_iter=500, random_state=42.",
+    "answer": "curriculum/answers/04a.md#04a-e2",
+    "implementations": [
+      "projects/stage04/notebook_solutions/04a.py"
+    ]
+  },
+  {
+    "id": "04a-E3",
+    "kind": "exercise",
+    "stage": "04",
+    "question": "Given rows with group and split keys, return True only if no group appears in multiple splits.",
+    "answer": "curriculum/answers/04a.md#04a-e3",
+    "implementations": [
+      "projects/stage04/notebook_solutions/04a.py"
+    ]
+  },
+  {
+    "id": "04a-O1",
+    "kind": "oral",
+    "stage": "04",
+    "question": "What is leakage?",
+    "answer": "curriculum/answers/04a.md#04a-o1",
+    "implementations": []
+  },
+  {
+    "id": "04a-O2",
+    "kind": "oral",
+    "stage": "04",
+    "question": "Why can a simple model win?",
+    "answer": "curriculum/answers/04a.md#04a-o2",
+    "implementations": []
+  },
+  {
+    "id": "04a-T",
+    "kind": "transfer",
+    "stage": "04",
+    "question": "Train the support-ticket project with DummyClassifier, logistic regression, random forest, and gradient boosting. Fit a separate synthetic demand regression task with linear, tree, forest, and boosting models. Record MAE, RMSE, R² and classification macro-F1.",
+    "answer": "curriculum/answers/04a.md#04a-t",
+    "implementations": [
+      "projects/stage04/solution.py",
+      "projects/stage04/experiments.py",
+      "projects/stage04/api.py",
+      "projects/stage04/persistence.py"
+    ]
+  },
+  {
+    "id": "04b-E1",
+    "kind": "exercise",
+    "stage": "04",
+    "question": "Return precision, recall, f1 for 0/1 truth and predictions of equal length. Zero denominators yield zero.",
+    "answer": "curriculum/answers/04b.md#04b-e1",
+    "implementations": [
+      "projects/stage04/notebook_solutions/04b.py"
+    ]
+  },
+  {
+    "id": "04b-E2",
+    "kind": "exercise",
+    "stage": "04",
+    "question": "Return total cost with false negatives costing 5 and false positives 1; score >= threshold predicts 1.",
+    "answer": "curriculum/answers/04b.md#04b-e2",
+    "implementations": [
+      "projects/stage04/notebook_solutions/04b.py"
+    ]
+  },
+  {
+    "id": "04b-E3",
+    "kind": "exercise",
+    "stage": "04",
+    "question": "Fit StandardScaler then PCA(n_components=1) on X and return transformed data plus pipeline.",
+    "answer": "curriculum/answers/04b.md#04b-e3",
+    "implementations": [
+      "projects/stage04/notebook_solutions/04b.py"
+    ]
+  },
+  {
+    "id": "04b-O1",
+    "kind": "oral",
+    "stage": "04",
+    "question": "Can AUC select a deployment threshold?",
+    "answer": "curriculum/answers/04b.md#04b-o1",
+    "implementations": []
+  },
+  {
+    "id": "04b-O2",
+    "kind": "oral",
+    "stage": "04",
+    "question": "Are clusters ground-truth categories?",
+    "answer": "curriculum/answers/04b.md#04b-o2",
+    "implementations": []
+  },
+  {
+    "id": "04b-T",
+    "kind": "transfer",
+    "stage": "04",
+    "question": "Compare KMeans and DBSCAN on two-moons and blob datasets. Explain failure shapes, outliers, and scale sensitivity. Write a ticket error taxonomy with at least 20 independently labeled new examples.",
+    "answer": "curriculum/answers/04b.md#04b-t",
+    "implementations": [
+      "projects/stage04/experiments.py"
+    ]
+  },
+  {
+    "id": "05a-E1",
+    "kind": "exercise",
+    "stage": "05",
+    "question": "Return a sigmoid for NumPy input without overflowing exp on large magnitudes.",
+    "answer": "curriculum/answers/05a.md#05a-e1",
+    "implementations": [
+      "projects/stage05/notebook_solutions/05a.py"
+    ]
+  },
+  {
+    "id": "05a-E2",
+    "kind": "exercise",
+    "stage": "05",
+    "question": "For X(n,d), y(n,1), w(d,1), scalar b, return MSE, dw, db.",
+    "answer": "curriculum/answers/05a.md#05a-e2",
+    "implementations": [
+      "projects/stage05/notebook_solutions/05a.py"
+    ]
+  },
+  {
+    "id": "05a-E3",
+    "kind": "exercise",
+    "stage": "05",
+    "question": "Use backward to fit w,b from zeros with 500 updates and lr=.05. Return w,b,loss history.",
+    "answer": "curriculum/answers/05a.md#05a-e3",
+    "implementations": [
+      "projects/stage05/notebook_solutions/05a.py"
+    ]
+  },
+  {
+    "id": "05a-O1",
+    "kind": "oral",
+    "stage": "05",
+    "question": "Why an activation?",
+    "answer": "curriculum/answers/05a.md#05a-o1",
+    "implementations": []
+  },
+  {
+    "id": "05a-O2",
+    "kind": "oral",
+    "stage": "05",
+    "question": "What is backpropagation?",
+    "answer": "curriculum/answers/05a.md#05a-o2",
+    "implementations": []
+  },
+  {
+    "id": "05a-T",
+    "kind": "transfer",
+    "stage": "05",
+    "question": "Implement a NumPy two-layer tanh network for XOR. Check 10 random gradient entries, overfit four examples, then compare SGD and momentum. Plot loss versus epoch.",
+    "answer": "curriculum/answers/05a.md#05a-t",
+    "implementations": [
+      "projects/stage05/experiments.py",
+      "projects/stage05/numpy_xor.py"
+    ]
+  },
+  {
+    "id": "05b-E1",
+    "kind": "exercise",
+    "stage": "05",
+    "question": "Return derivative of sum(x²) as a tensor; create a fresh float tensor with gradients enabled.",
+    "answer": "curriculum/answers/05b.md#05b-e1",
+    "implementations": [
+      "projects/stage05/notebook_solutions/05b.py"
+    ]
+  },
+  {
+    "id": "05b-E2",
+    "kind": "exercise",
+    "stage": "05",
+    "question": "Return a network mapping (N,1,8,8) to (N,10): Conv2d(1,4,3,padding=1), ReLU, Flatten, Linear(256,10).",
+    "answer": "curriculum/answers/05b.md#05b-e2",
+    "implementations": [
+      "projects/stage05/notebook_solutions/05b.py"
+    ]
+  },
+  {
+    "id": "05b-E3",
+    "kind": "exercise",
+    "stage": "05",
+    "question": "Set training mode, zero gradients, compute cross entropy, backpropagate, step optimizer; return float loss.",
+    "answer": "curriculum/answers/05b.md#05b-e3",
+    "implementations": [
+      "projects/stage05/notebook_solutions/05b.py"
+    ]
+  },
+  {
+    "id": "05b-O1",
+    "kind": "oral",
+    "stage": "05",
+    "question": "Why both eval and no_grad?",
+    "answer": "curriculum/answers/05b.md#05b-o1",
+    "implementations": []
+  },
+  {
+    "id": "05b-O2",
+    "kind": "oral",
+    "stage": "05",
+    "question": "Why can gradients explode?",
+    "answer": "curriculum/answers/05b.md#05b-o2",
+    "implementations": []
+  },
+  {
+    "id": "05b-T",
+    "kind": "transfer",
+    "stage": "05",
+    "question": "Run the digits CNN project with train/validation/test splits, DataLoader, loss curves, best-checkpoint restore, per-class errors, and a model card. Compare an MLP and CNN using the same split.",
+    "answer": "curriculum/answers/05b.md#05b-t",
+    "implementations": [
+      "projects/stage05/experiments.py"
+    ]
+  },
+  {
+    "id": "06a-E1",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "Build sorted unique-character vocabulary. Return ids, encode mapping, and decoded text for the given nonempty string.",
+    "answer": "curriculum/answers/06a.md#06a-e1",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06a.py"
+    ]
+  },
+  {
+    "id": "06a-E2",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "Return output and attention weights for equal-length 2D Q,K,V. Mask all future positions before stable row softmax.",
+    "answer": "curriculum/answers/06a.md#06a-e2",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06a.py"
+    ]
+  },
+  {
+    "id": "06a-E3",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "Return stable softmax(logits/temperature). Reject nonpositive temperature.",
+    "answer": "curriculum/answers/06a.md#06a-e3",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06a.py"
+    ]
+  },
+  {
+    "id": "06a-O1",
+    "kind": "oral",
+    "stage": "06",
+    "question": "Why divide by square root of d?",
+    "answer": "curriculum/answers/06a.md#06a-o1",
+    "implementations": []
+  },
+  {
+    "id": "06a-O2",
+    "kind": "oral",
+    "stage": "06",
+    "question": "Does attention prove explanation?",
+    "answer": "curriculum/answers/06a.md#06a-o2",
+    "implementations": []
+  },
+  {
+    "id": "06a-T",
+    "kind": "transfer",
+    "stage": "06",
+    "question": "Visualize attention weights and prove changing a future value cannot affect an earlier output. Implement top-k/top-p and compare entropy. Read a subword tokenizer vocabulary and explain special tokens.",
+    "answer": "curriculum/answers/06a.md#06a-t",
+    "implementations": [
+      "projects/stage06/attention_lab.py"
+    ]
+  },
+  {
+    "id": "06b-E1",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "Return sequence[:-1] and sequence[1:] for a 1D tensor of at least two tokens.",
+    "answer": "curriculum/answers/06b.md#06b-e1",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06b.py"
+    ]
+  },
+  {
+    "id": "06b-E2",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "Return an n×n boolean mask where True blocks future keys; diagonal stays False.",
+    "answer": "curriculum/answers/06b.md#06b-e2",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06b.py"
+    ]
+  },
+  {
+    "id": "06b-E3",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "Implement TinyBlock with batch_first MultiheadAttention(d,2), LayerNorm, and residual connection. Forward accepts (N,T,d), uses causal_mask, returns same shape.",
+    "answer": "curriculum/answers/06b.md#06b-e3",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06b.py"
+    ]
+  },
+  {
+    "id": "06b-O1",
+    "kind": "oral",
+    "stage": "06",
+    "question": "Why split text before windowing?",
+    "answer": "curriculum/answers/06b.md#06b-o1",
+    "implementations": []
+  },
+  {
+    "id": "06b-O2",
+    "kind": "oral",
+    "stage": "06",
+    "question": "Why a residual path?",
+    "answer": "curriculum/answers/06b.md#06b-o2",
+    "implementations": []
+  },
+  {
+    "id": "06b-T",
+    "kind": "transfer",
+    "stage": "06",
+    "question": "Train projects/stage06/tiny_lm.py, add a second block, compare held-out loss and generation, then implement cached inference as an extension. Explain why train loss alone is insufficient.",
+    "answer": "curriculum/answers/06b.md#06b-t",
+    "implementations": [
+      "projects/stage06/cache_lab.py",
+      "projects/stage06/tiny_lm.py"
+    ]
+  },
+  {
+    "id": "06c-E1",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "Parse JSON with company (nonempty str) and revenue (finite float >=0), forbid extra keys. Return a validated model_dump dictionary.",
+    "answer": "curriculum/answers/06c.md#06c-e1",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06c.py"
+    ]
+  },
+  {
+    "id": "06c-E2",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "For W(out,in), A(rank,in), B(out,rank), return W+(alpha/rank)*(B@A).",
+    "answer": "curriculum/answers/06c.md#06c-e2",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06c.py"
+    ]
+  },
+  {
+    "id": "06c-E3",
+    "kind": "exercise",
+    "stage": "06",
+    "question": "Return int8 codes, scale, and dequantized weights using max(abs(w))/127; all-zero arrays use scale=1.",
+    "answer": "curriculum/answers/06c.md#06c-e3",
+    "implementations": [
+      "projects/stage06/notebook_solutions/06c.py"
+    ]
+  },
+  {
+    "id": "06c-O1",
+    "kind": "oral",
+    "stage": "06",
+    "question": "Does valid JSON imply truth?",
+    "answer": "curriculum/answers/06c.md#06c-o1",
+    "implementations": []
+  },
+  {
+    "id": "06c-O2",
+    "kind": "oral",
+    "stage": "06",
+    "question": "What does LoRA change?",
+    "answer": "curriculum/answers/06c.md#06c-o2",
+    "implementations": []
+  },
+  {
+    "id": "06c-T",
+    "kind": "transfer",
+    "stage": "06",
+    "question": "Run the pretrained text-classification and PEFT lab in projects/stage06/pretrained.py after selecting/downloading a model. Compare frozen baseline versus fine-tuning on validation examples; record revision, license, cost, and test metrics. Audit extraction against source spans.",
+    "answer": "curriculum/answers/06c.md#06c-t",
+    "implementations": [
+      "projects/stage06/attention_lab.py",
+      "projects/stage06/pretrained.py",
+      "projects/stage06/qlora.py",
+      "requirements/qlora.txt"
+    ]
+  },
+  {
+    "id": "07a-E1",
+    "kind": "exercise",
+    "stage": "07",
+    "question": "Return word chunks with size>0 and 0<=overlap<size. Avoid an extra final chunk made only of overlap.",
+    "answer": "curriculum/answers/07a.md#07a-e1",
+    "implementations": [
+      "projects/stage07/notebook_solutions/07a.py"
+    ]
+  },
+  {
+    "id": "07a-E2",
+    "kind": "exercise",
+    "stage": "07",
+    "question": "For dicts with id,text, rank documents by number of shared unique lowercase alphanumeric terms; omit zero scores, break ties by id.",
+    "answer": "curriculum/answers/07a.md#07a-e2",
+    "implementations": [
+      "projects/stage07/notebook_solutions/07a.py"
+    ]
+  },
+  {
+    "id": "07a-E3",
+    "kind": "exercise",
+    "stage": "07",
+    "question": "Combine ranked ID lists using sum(1/(c+rank)), rank starting at 1. Count an ID at most once per list; tie-break by ID.",
+    "answer": "curriculum/answers/07a.md#07a-e3",
+    "implementations": [
+      "projects/stage07/notebook_solutions/07a.py"
+    ]
+  },
+  {
+    "id": "07a-O1",
+    "kind": "oral",
+    "stage": "07",
+    "question": "Why keep source offsets?",
+    "answer": "curriculum/answers/07a.md#07a-o1",
+    "implementations": []
+  },
+  {
+    "id": "07a-O2",
+    "kind": "oral",
+    "stage": "07",
+    "question": "What can reranking fix?",
+    "answer": "curriculum/answers/07a.md#07a-o2",
+    "implementations": []
+  },
+  {
+    "id": "07a-T",
+    "kind": "transfer",
+    "stage": "07",
+    "question": "Build a private document index with chunk IDs, source offsets, parser version, and content hashes. Compare keyword, embedding, hybrid, and reranked recall on the same labeled questions.",
+    "answer": "curriculum/answers/07a.md#07a-t",
+    "implementations": [
+      "projects/stage07/retrieval_lab.py",
+      "projects/stage07/integration.py"
+    ]
+  },
+  {
+    "id": "07b-E1",
+    "kind": "exercise",
+    "stage": "07",
+    "question": "Return public documents or documents with tenant equal to the authenticated tenant. Do not infer identity from the query text.",
+    "answer": "curriculum/answers/07b.md#07b-e1",
+    "implementations": [
+      "projects/stage07/notebook_solutions/07b.py"
+    ]
+  },
+  {
+    "id": "07b-E2",
+    "kind": "exercise",
+    "stage": "07",
+    "question": "Using TF-IDF, rank authorized nonzero-scoring documents. Return (id,score) pairs, sorted descending then id. Empty input returns [].",
+    "answer": "curriculum/answers/07b.md#07b-e2",
+    "implementations": [
+      "projects/stage07/notebook_solutions/07b.py"
+    ]
+  },
+  {
+    "id": "07b-E3",
+    "kind": "exercise",
+    "stage": "07",
+    "question": "Return status=unsupported with empty citations when no hits; else status=evidence with exact quotes and IDs. Do not synthesize a claim.",
+    "answer": "curriculum/answers/07b.md#07b-e3",
+    "implementations": [
+      "projects/stage07/notebook_solutions/07b.py"
+    ]
+  },
+  {
+    "id": "07b-O1",
+    "kind": "oral",
+    "stage": "07",
+    "question": "Can a citation be valid but misleading?",
+    "answer": "curriculum/answers/07b.md#07b-o1",
+    "implementations": []
+  },
+  {
+    "id": "07b-O2",
+    "kind": "oral",
+    "stage": "07",
+    "question": "Why filter before model access?",
+    "answer": "curriculum/answers/07b.md#07b-o2",
+    "implementations": []
+  },
+  {
+    "id": "07b-T",
+    "kind": "transfer",
+    "stage": "07",
+    "question": "Run the pgvector lab, ingest Markdown plus one PDF, and answer through Ollama. Evaluate access isolation, paraphrases, exact numbers, unsupported questions, and malicious retrieved instructions.",
+    "answer": "curriculum/answers/07b.md#07b-t",
+    "implementations": [
+      "projects/stage07/integration.py",
+      "projects/stage12/security_lab.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "08a-E1",
+    "kind": "exercise",
+    "stage": "08",
+    "question": "Execute add or divide from a request with exactly tool,arguments and arguments exactly a,b; finite numeric values only (exclude booleans). Reject all other requests.",
+    "answer": "curriculum/answers/08a.md#08a-e1",
+    "implementations": [
+      "projects/stage08/notebook_solutions/08a.py"
+    ]
+  },
+  {
+    "id": "08a-E2",
+    "kind": "exercise",
+    "stage": "08",
+    "question": "Execute sequential requests up to max_calls. Return observations and status complete or budget_exhausted. Record tool errors as strings; do not pretend they succeeded.",
+    "answer": "curriculum/answers/08a.md#08a-e2",
+    "implementations": [
+      "projects/stage08/notebook_solutions/08a.py"
+    ]
+  },
+  {
+    "id": "08a-E3",
+    "kind": "exercise",
+    "stage": "08",
+    "question": "Call operation at most attempts times; retry TimeoutError only. Raise the final error if exhausted.",
+    "answer": "curriculum/answers/08a.md#08a-e3",
+    "implementations": [
+      "projects/stage08/notebook_solutions/08a.py"
+    ]
+  },
+  {
+    "id": "08a-O1",
+    "kind": "oral",
+    "stage": "08",
+    "question": "Who grants tool permission?",
+    "answer": "curriculum/answers/08a.md#08a-o1",
+    "implementations": []
+  },
+  {
+    "id": "08a-O2",
+    "kind": "oral",
+    "stage": "08",
+    "question": "When is retry unsafe?",
+    "answer": "curriculum/answers/08a.md#08a-o2",
+    "implementations": []
+  },
+  {
+    "id": "08a-T",
+    "kind": "transfer",
+    "stage": "08",
+    "question": "Extend document search with typed SQL read tools and a calculator. Add traces, step/deadline budgets, timeouts, approval records, and tests for malformed tool arguments and unavailable services.",
+    "answer": "curriculum/answers/08a.md#08a-t",
+    "implementations": [
+      "projects/stage08/research.py",
+      "projects/stage08/workflow_lab.py",
+      "projects/stage10/failure_lab.py",
+      "tests/test_projects.py",
+      "tests/test_answer_labs.py"
+    ]
+  },
+  {
+    "id": "08b-E1",
+    "kind": "exercise",
+    "stage": "08",
+    "question": "Return route=calculator when question contains the word ratio (case-insensitive), else search. Return only the update.",
+    "answer": "curriculum/answers/08b.md#08b-e1",
+    "implementations": [
+      "projects/stage08/notebook_solutions/08b.py"
+    ]
+  },
+  {
+    "id": "08b-E2",
+    "kind": "exercise",
+    "stage": "08",
+    "question": "Build START→route→conditional calculator/search→END. Calculator returns answer=\"calculator selected\" and search returns \"search selected\".",
+    "answer": "curriculum/answers/08b.md#08b-e2",
+    "implementations": [
+      "projects/stage08/notebook_solutions/08b.py"
+    ]
+  },
+  {
+    "id": "08b-E3",
+    "kind": "exercise",
+    "stage": "08",
+    "question": "Return SHA-256 of canonical JSON containing actor, action, arguments. Same content in different key order must match.",
+    "answer": "curriculum/answers/08b.md#08b-e3",
+    "implementations": [
+      "projects/stage08/notebook_solutions/08b.py"
+    ]
+  },
+  {
+    "id": "08b-O1",
+    "kind": "oral",
+    "stage": "08",
+    "question": "What must persistence isolate?",
+    "answer": "curriculum/answers/08b.md#08b-o1",
+    "implementations": []
+  },
+  {
+    "id": "08b-O2",
+    "kind": "oral",
+    "stage": "08",
+    "question": "Does a framework remove authorization work?",
+    "answer": "curriculum/answers/08b.md#08b-o2",
+    "implementations": []
+  },
+  {
+    "id": "08b-T",
+    "kind": "transfer",
+    "stage": "08",
+    "question": "Run Stage 08’s checkpoint/interrupt example. Resume one approved action, reject a changed action, and verify two thread IDs cannot exchange state. Compare one graph versus a two-worker design on measured cost and correctness.",
+    "answer": "curriculum/answers/08b.md#08b-t",
+    "implementations": [
+      "projects/stage08/solution.py",
+      "projects/stage08/workflow_lab.py"
+    ]
+  },
+  {
+    "id": "09a-E1",
+    "kind": "exercise",
+    "stage": "09",
+    "question": "Return GiB for parameters and bits; require positive values.",
+    "answer": "curriculum/answers/09a.md#09a-e1",
+    "implementations": [
+      "projects/stage09/notebook_solutions/09a.py"
+    ]
+  },
+  {
+    "id": "09a-E2",
+    "kind": "exercise",
+    "stage": "09",
+    "question": "Return bytes for layers, kv_heads, head_dim, tokens, batch=1, bytes_per_value=2.",
+    "answer": "curriculum/answers/09a.md#09a-e2",
+    "implementations": [
+      "projects/stage09/notebook_solutions/09a.py"
+    ]
+  },
+  {
+    "id": "09a-E3",
+    "kind": "exercise",
+    "stage": "09",
+    "question": "Return nearest-rank percentile p in (0,1] of nonempty values.",
+    "answer": "curriculum/answers/09a.md#09a-e3",
+    "implementations": [
+      "projects/stage09/notebook_solutions/09a.py"
+    ]
+  },
+  {
+    "id": "09a-O1",
+    "kind": "oral",
+    "stage": "09",
+    "question": "Why does concurrency consume memory?",
+    "answer": "curriculum/answers/09a.md#09a-o1",
+    "implementations": []
+  },
+  {
+    "id": "09a-O2",
+    "kind": "oral",
+    "stage": "09",
+    "question": "Is quantization always faster?",
+    "answer": "curriculum/answers/09a.md#09a-o2",
+    "implementations": []
+  },
+  {
+    "id": "09a-T",
+    "kind": "transfer",
+    "stage": "09",
+    "question": "Create a hardware budget for 1B, 7B, and 14B models at 4/8/16 bits and multiple context lengths. Measure your actual machine before buying hardware or choosing a deployment target.",
+    "answer": "curriculum/answers/09a.md#09a-t",
+    "implementations": [
+      "projects/stage09/benchmark.py"
+    ]
+  },
+  {
+    "id": "09b-E1",
+    "kind": "exercise",
+    "stage": "09",
+    "question": "Return a native chat payload with model, one user message, stream=False, and options.num_predict=max_tokens. Require 1..1024 tokens and nonempty prompt <=4000 characters.",
+    "answer": "curriculum/answers/09b.md#09b-e1",
+    "implementations": [
+      "projects/stage09/notebook_solutions/09b.py"
+    ]
+  },
+  {
+    "id": "09b-E2",
+    "kind": "exercise",
+    "stage": "09",
+    "question": "Extract message.content as a string from a native Ollama response; malformed responses raise ValueError.",
+    "answer": "curriculum/answers/09b.md#09b-e2",
+    "implementations": [
+      "projects/stage09/notebook_solutions/09b.py"
+    ]
+  },
+  {
+    "id": "09b-E3",
+    "kind": "exercise",
+    "stage": "09",
+    "question": "Return tokens/second from token counts and total elapsed wall seconds; reject nonpositive elapsed.",
+    "answer": "curriculum/answers/09b.md#09b-e3",
+    "implementations": [
+      "projects/stage09/notebook_solutions/09b.py"
+    ]
+  },
+  {
+    "id": "09b-O1",
+    "kind": "oral",
+    "stage": "09",
+    "question": "What does an offline adapter test prove?",
+    "answer": "curriculum/answers/09b.md#09b-o1",
+    "implementations": []
+  },
+  {
+    "id": "09b-O2",
+    "kind": "oral",
+    "stage": "09",
+    "question": "Why cap output tokens?",
+    "answer": "curriculum/answers/09b.md#09b-o2",
+    "implementations": []
+  },
+  {
+    "id": "09b-T",
+    "kind": "transfer",
+    "stage": "09",
+    "question": "Run projects/stage09/serve.py against an installed model. Save at least 30 warm and cold observations, output lengths, failures, p50/p95, and machine details. Repeat on vLLM only on compatible hardware.",
+    "answer": "curriculum/answers/09b.md#09b-t",
+    "implementations": [
+      "projects/stage09/benchmark.py",
+      "projects/stage09/serve.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "10a-E1",
+    "kind": "exercise",
+    "stage": "10",
+    "question": "Return fraction of events with ok=True and latency_ms<=target. Empty input raises ValueError.",
+    "answer": "curriculum/answers/10a.md#10a-e1",
+    "implementations": [
+      "projects/stage10/notebook_solutions/10a.py"
+    ]
+  },
+  {
+    "id": "10a-E2",
+    "kind": "exercise",
+    "stage": "10",
+    "question": "Keep request_id,status,latency_ms only; omit every other key.",
+    "answer": "curriculum/answers/10a.md#10a-e2",
+    "implementations": [
+      "projects/stage10/notebook_solutions/10a.py"
+    ]
+  },
+  {
+    "id": "10a-E3",
+    "kind": "exercise",
+    "stage": "10",
+    "question": "Given a mutable cache and key,payload,result, save (payload,result) on first call, return existing result for same payload, reject changed payload.",
+    "answer": "curriculum/answers/10a.md#10a-e3",
+    "implementations": [
+      "projects/stage10/notebook_solutions/10a.py"
+    ]
+  },
+  {
+    "id": "10a-O1",
+    "kind": "oral",
+    "stage": "10",
+    "question": "Liveness versus readiness?",
+    "answer": "curriculum/answers/10a.md#10a-o1",
+    "implementations": []
+  },
+  {
+    "id": "10a-O2",
+    "kind": "oral",
+    "stage": "10",
+    "question": "What proves a backup works?",
+    "answer": "curriculum/answers/10a.md#10a-o2",
+    "implementations": []
+  },
+  {
+    "id": "10a-T",
+    "kind": "transfer",
+    "stage": "10",
+    "question": "Inject a database outage, model timeout, invalid auth, malformed body, oversized prompt, and corrupt document. Record status, latency, logs, recovery steps, and whether retries could duplicate work.",
+    "answer": "curriculum/answers/10a.md#10a-t",
+    "implementations": [
+      "projects/stage10/failure_lab.py",
+      "projects/stage12/security_lab.py",
+      "projects/stage10/RUNBOOK.md"
+    ]
+  },
+  {
+    "id": "10b-E1",
+    "kind": "exercise",
+    "stage": "10",
+    "question": "Read a mapping with DATABASE_URL and API_KEY; reject missing/blank values or API_KEY shorter than 24 characters.",
+    "answer": "curriculum/answers/10b.md#10b-e1",
+    "implementations": [
+      "projects/stage10/notebook_solutions/10b.py"
+    ]
+  },
+  {
+    "id": "10b-E2",
+    "kind": "exercise",
+    "stage": "10",
+    "question": "Return True only when tests, evals, migration_rehearsal, and restore_drill are all exactly True.",
+    "answer": "curriculum/answers/10b.md#10b-e2",
+    "implementations": [
+      "projects/stage10/notebook_solutions/10b.py"
+    ]
+  },
+  {
+    "id": "10b-E3",
+    "kind": "exercise",
+    "stage": "10",
+    "question": "A service supports schema versions inclusive [minimum,maximum]. Return whether current is compatible; reject inverted bounds.",
+    "answer": "curriculum/answers/10b.md#10b-e3",
+    "implementations": [
+      "projects/stage10/notebook_solutions/10b.py"
+    ]
+  },
+  {
+    "id": "10b-O1",
+    "kind": "oral",
+    "stage": "10",
+    "question": "Why is localhost often wrong in Compose?",
+    "answer": "curriculum/answers/10b.md#10b-o1",
+    "implementations": []
+  },
+  {
+    "id": "10b-O2",
+    "kind": "oral",
+    "stage": "10",
+    "question": "Why pin release artifacts?",
+    "answer": "curriculum/answers/10b.md#10b-o2",
+    "implementations": []
+  },
+  {
+    "id": "10b-T",
+    "kind": "transfer",
+    "stage": "10",
+    "question": "Use the provided Dockerfile/Compose, run API+PostgreSQL, test persistence after restart, and rehearse backup/restore into a separate database. Add CI and document a Coolify deployment and rollback without publishing secrets.",
+    "answer": "curriculum/answers/10b.md#10b-t",
+    "implementations": [
+      "projects/stage10/Dockerfile",
+      "compose.yaml",
+      ".github/workflows/course.yml",
+      "projects/stage10/RUNBOOK.md",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "11a-E1",
+    "kind": "exercise",
+    "stage": "11",
+    "question": "Return (sum,count) for each partition, combine, and return the global mean; reject zero total count.",
+    "answer": "curriculum/answers/11a.md#11a-e1",
+    "implementations": [
+      "projects/stage11/notebook_solutions/11a.py"
+    ]
+  },
+  {
+    "id": "11a-E2",
+    "kind": "exercise",
+    "stage": "11",
+    "question": "Merge a list of key→sum dictionaries into a new dictionary.",
+    "answer": "curriculum/answers/11a.md#11a-e2",
+    "implementations": [
+      "projects/stage11/notebook_solutions/11a.py"
+    ]
+  },
+  {
+    "id": "11a-E3",
+    "kind": "exercise",
+    "stage": "11",
+    "question": "Return largest nonnegative partition size divided by mean size; reject empty or all-zero input.",
+    "answer": "curriculum/answers/11a.md#11a-e3",
+    "implementations": [
+      "projects/stage11/notebook_solutions/11a.py"
+    ]
+  },
+  {
+    "id": "11a-O1",
+    "kind": "oral",
+    "stage": "11",
+    "question": "Why is collect dangerous?",
+    "answer": "curriculum/answers/11a.md#11a-o1",
+    "implementations": []
+  },
+  {
+    "id": "11a-O2",
+    "kind": "oral",
+    "stage": "11",
+    "question": "Why use an explicit schema?",
+    "answer": "curriculum/answers/11a.md#11a-o2",
+    "implementations": []
+  },
+  {
+    "id": "11a-T",
+    "kind": "transfer",
+    "stage": "11",
+    "question": "Generate a million synthetic transactions in batches, compute grouped totals without loading everything into memory, and compare output with Spark. Explain shuffle, broadcast joins, and skew.",
+    "answer": "curriculum/answers/11a.md#11a-t",
+    "implementations": [
+      "projects/stage11/partition_lab.py",
+      "projects/stage11/solution.py"
+    ]
+  },
+  {
+    "id": "11b-E1",
+    "kind": "exercise",
+    "stage": "11",
+    "question": "Return account,sum_cents sorted by account, using Spark DataFrame expressions.",
+    "answer": "curriculum/answers/11b.md#11b-e1",
+    "implementations": [
+      "projects/stage11/notebook_solutions/11b.py"
+    ]
+  },
+  {
+    "id": "11b-E2",
+    "kind": "exercise",
+    "stage": "11",
+    "question": "Add running_cents partitioned by account ordered by unique id with an unbounded preceding ROWS frame.",
+    "answer": "curriculum/answers/11b.md#11b-e2",
+    "implementations": [
+      "projects/stage11/notebook_solutions/11b.py"
+    ]
+  },
+  {
+    "id": "11b-E3",
+    "kind": "exercise",
+    "stage": "11",
+    "question": "Write df to a supplied new directory using errorifexists, read it, and return row count. Do not overwrite existing work.",
+    "answer": "curriculum/answers/11b.md#11b-e3",
+    "implementations": [
+      "projects/stage11/notebook_solutions/11b.py"
+    ]
+  },
+  {
+    "id": "11b-O1",
+    "kind": "oral",
+    "stage": "11",
+    "question": "Why lazy execution?",
+    "answer": "curriculum/answers/11b.md#11b-o1",
+    "implementations": []
+  },
+  {
+    "id": "11b-O2",
+    "kind": "oral",
+    "stage": "11",
+    "question": "What does a shuffle cost?",
+    "answer": "curriculum/answers/11b.md#11b-o2",
+    "implementations": []
+  },
+  {
+    "id": "11b-T",
+    "kind": "transfer",
+    "stage": "11",
+    "question": "Run the Stage 11 job, compare partitions 2/8/32, capture explain plans and timings, and compute anomalies plus rolling statistics. Repeat on an actual cluster before claiming distributed operational experience.",
+    "answer": "curriculum/answers/11b.md#11b-t",
+    "implementations": [
+      "projects/stage11/partition_lab.py",
+      "projects/stage11/solution.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "12a-E1",
+    "kind": "exercise",
+    "stage": "12",
+    "question": "Return a dictionary with asset,entry,impact,control; reject empty fields.",
+    "answer": "curriculum/answers/12a.md#12a-e1",
+    "implementations": [
+      "projects/stage12/notebook_solutions/12a.py"
+    ]
+  },
+  {
+    "id": "12a-E2",
+    "kind": "exercise",
+    "stage": "12",
+    "question": "Escape model text for display in an HTML text node, including quotes.",
+    "answer": "curriculum/answers/12a.md#12a-e2",
+    "implementations": [
+      "projects/stage12/notebook_solutions/12a.py"
+    ]
+  },
+  {
+    "id": "12a-E3",
+    "kind": "exercise",
+    "stage": "12",
+    "question": "Allow only when chars<=4000, requested_tokens<=512, pending<10; require all inputs nonnegative.",
+    "answer": "curriculum/answers/12a.md#12a-e3",
+    "implementations": [
+      "projects/stage12/notebook_solutions/12a.py"
+    ]
+  },
+  {
+    "id": "12a-O1",
+    "kind": "oral",
+    "stage": "12",
+    "question": "Is the system prompt a secret vault?",
+    "answer": "curriculum/answers/12a.md#12a-o1",
+    "implementations": []
+  },
+  {
+    "id": "12a-O2",
+    "kind": "oral",
+    "stage": "12",
+    "question": "Why is filtering attack phrases insufficient?",
+    "answer": "curriculum/answers/12a.md#12a-o2",
+    "implementations": []
+  },
+  {
+    "id": "12a-T",
+    "kind": "transfer",
+    "stage": "12",
+    "question": "Write a threat model for the capstone and 20 adversarial fixtures. Include malicious document instructions, fabricated citations, oversized input, poisoned numbers, and cross-tenant requests. Record actual observed controls and residual risks.",
+    "answer": "curriculum/answers/12a.md#12a-t",
+    "implementations": [
+      "projects/stage12/security_lab.py"
+    ]
+  },
+  {
+    "id": "12b-E1",
+    "kind": "exercise",
+    "stage": "12",
+    "question": "Return whether a reader/admin principal may read a public or same-tenant resource. Unknown roles are denied.",
+    "answer": "curriculum/answers/12b.md#12b-e1",
+    "implementations": [
+      "projects/stage12/notebook_solutions/12b.py"
+    ]
+  },
+  {
+    "id": "12b-E2",
+    "kind": "exercise",
+    "stage": "12",
+    "question": "Return a deterministic key from tenant, permission_version, index_version, model_version, query using canonical JSON and SHA256.",
+    "answer": "curriculum/answers/12b.md#12b-e2",
+    "implementations": [
+      "projects/stage12/notebook_solutions/12b.py"
+    ]
+  },
+  {
+    "id": "12b-E3",
+    "kind": "exercise",
+    "stage": "12",
+    "question": "Return a resource by ID only when authorized; otherwise raise PermissionError, including missing IDs, to avoid distinguishing existence.",
+    "answer": "curriculum/answers/12b.md#12b-e3",
+    "implementations": [
+      "projects/stage12/notebook_solutions/12b.py"
+    ]
+  },
+  {
+    "id": "12b-O1",
+    "kind": "oral",
+    "stage": "12",
+    "question": "Does an unguessable ID replace authorization?",
+    "answer": "curriculum/answers/12b.md#12b-o1",
+    "implementations": []
+  },
+  {
+    "id": "12b-O2",
+    "kind": "oral",
+    "stage": "12",
+    "question": "What belongs in cache identity?",
+    "answer": "curriculum/answers/12b.md#12b-o2",
+    "implementations": []
+  },
+  {
+    "id": "12b-T",
+    "kind": "transfer",
+    "stage": "12",
+    "question": "Exercise every API endpoint as two users and two tenants. Test warm-cache access, revoked permissions, citation fetches, saved graph state, and backups. Produce a permission matrix with allowed and denied evidence.",
+    "answer": "curriculum/answers/12b.md#12b-t",
+    "implementations": [
+      "projects/stage12/security_lab.py",
+      "projects/stage08/workflow_lab.py",
+      "projects/stage10/failure_lab.py"
+    ]
+  },
+  {
+    "id": "13a-E1",
+    "kind": "exercise",
+    "stage": "13",
+    "question": "Use unique IDs in top k; return relevant-hit count / number of relevant IDs. An empty relevance set raises ValueError.",
+    "answer": "curriculum/answers/13a.md#13a-e1",
+    "implementations": [
+      "projects/stage13/notebook_solutions/13a.py"
+    ]
+  },
+  {
+    "id": "13a-E2",
+    "kind": "exercise",
+    "stage": "13",
+    "question": "Return reciprocal rank of first relevant ID, else 0.",
+    "answer": "curriculum/answers/13a.md#13a-e2",
+    "implementations": [
+      "projects/stage13/notebook_solutions/13a.py"
+    ]
+  },
+  {
+    "id": "13a-E3",
+    "kind": "exercise",
+    "stage": "13",
+    "question": "Given one boolean human support judgment per citation, return supported/total; no citations returns None.",
+    "answer": "curriculum/answers/13a.md#13a-e3",
+    "implementations": [
+      "projects/stage13/notebook_solutions/13a.py"
+    ]
+  },
+  {
+    "id": "13a-O1",
+    "kind": "oral",
+    "stage": "13",
+    "question": "Why component metrics?",
+    "answer": "curriculum/answers/13a.md#13a-o1",
+    "implementations": []
+  },
+  {
+    "id": "13a-O2",
+    "kind": "oral",
+    "stage": "13",
+    "question": "Can a judge replace all human review?",
+    "answer": "curriculum/answers/13a.md#13a-o2",
+    "implementations": []
+  },
+  {
+    "id": "13a-T",
+    "kind": "transfer",
+    "stage": "13",
+    "question": "Label at least 40 development and 20 locked holdout questions before tuning the retriever. Grow to 100–500 curated cases over the capstone. Include permission denials, unsupported questions, multi-document comparisons, and exact numbers.",
+    "answer": "curriculum/answers/13a.md#13a-t",
+    "implementations": [
+      "projects/stage13/evaluation_lab.py",
+      "datasets/evals.jsonl"
+    ]
+  },
+  {
+    "id": "13b-E1",
+    "kind": "exercise",
+    "stage": "13",
+    "question": "Return mean(candidate-baseline); require equal nonzero lengths.",
+    "answer": "curriculum/answers/13b.md#13b-e1",
+    "implementations": [
+      "projects/stage13/notebook_solutions/13b.py"
+    ]
+  },
+  {
+    "id": "13b-E2",
+    "kind": "exercise",
+    "stage": "13",
+    "question": "Require recall>=.8, groundedness>=.9, unauthorized=0, p95_ms<=2000. Missing metrics fail.",
+    "answer": "curriculum/answers/13b.md#13b-e2",
+    "implementations": [
+      "projects/stage13/notebook_solutions/13b.py"
+    ]
+  },
+  {
+    "id": "13b-E3",
+    "kind": "exercise",
+    "stage": "13",
+    "question": "For rows with category and correct boolean, return category→{n,accuracy}.",
+    "answer": "curriculum/answers/13b.md#13b-e3",
+    "implementations": [
+      "projects/stage13/notebook_solutions/13b.py"
+    ]
+  },
+  {
+    "id": "13b-O1",
+    "kind": "oral",
+    "stage": "13",
+    "question": "Why predeclare thresholds?",
+    "answer": "curriculum/answers/13b.md#13b-o1",
+    "implementations": []
+  },
+  {
+    "id": "13b-O2",
+    "kind": "oral",
+    "stage": "13",
+    "question": "When is ordinary bootstrap inappropriate?",
+    "answer": "curriculum/answers/13b.md#13b-o2",
+    "implementations": []
+  },
+  {
+    "id": "13b-T",
+    "kind": "transfer",
+    "stage": "13",
+    "question": "Build the evaluation CLI with machine-readable reports and a nonzero exit on regression. Compare chunk sizes and models while keeping labels fixed; explain uncertainty and any excluded cases.",
+    "answer": "curriculum/answers/13b.md#13b-t",
+    "implementations": [
+      "projects/stage13/evaluation_lab.py",
+      "projects/stage13/solution.py"
+    ]
+  },
+  {
+    "id": "14a-E1",
+    "kind": "exercise",
+    "stage": "14",
+    "question": "Return True if assets equals liabilities+equity within an absolute tolerance; inputs share the same units.",
+    "answer": "curriculum/answers/14a.md#14a-e1",
+    "implementations": [
+      "projects/stage14/notebook_solutions/14a.py"
+    ]
+  },
+  {
+    "id": "14a-E2",
+    "kind": "exercise",
+    "stage": "14",
+    "question": "For positive revenue and shares, return EPS, operating_margin, and FCF (capex given as positive cash outflow).",
+    "answer": "curriculum/answers/14a.md#14a-e2",
+    "implementations": [
+      "projects/stage14/notebook_solutions/14a.py"
+    ]
+  },
+  {
+    "id": "14a-E3",
+    "kind": "exercise",
+    "stage": "14",
+    "question": "Return (current-prior)/prior for positive prior; return None when prior<=0.",
+    "answer": "curriculum/answers/14a.md#14a-e3",
+    "implementations": [
+      "projects/stage14/notebook_solutions/14a.py"
+    ]
+  },
+  {
+    "id": "14a-O1",
+    "kind": "oral",
+    "stage": "14",
+    "question": "Why compare like periods?",
+    "answer": "curriculum/answers/14a.md#14a-o1",
+    "implementations": []
+  },
+  {
+    "id": "14a-O2",
+    "kind": "oral",
+    "stage": "14",
+    "question": "Does low P/E prove undervaluation?",
+    "answer": "curriculum/answers/14a.md#14a-o2",
+    "implementations": []
+  },
+  {
+    "id": "14a-T",
+    "kind": "transfer",
+    "stage": "14",
+    "question": "Analyze fictional Aurora and Beacon statements. Calculate EPS, revenue/EPS growth, P/E, P/S, P/B, ROE, ROA, debt/equity, gross/operating/net margin, and FCF yield. State all units, conventions, and undefined cases; cite each source row.",
+    "answer": "curriculum/answers/14a.md#14a-t",
+    "implementations": [
+      "projects/stage14/finance_lab.py",
+      "projects/stage14/solution.py"
+    ]
+  },
+  {
+    "id": "14b-E1",
+    "kind": "exercise",
+    "stage": "14",
+    "question": "Return a Series containing the mean of the previous window prices, excluding today; incomplete windows stay NaN.",
+    "answer": "curriculum/answers/14b.md#14b-e1",
+    "implementations": [
+      "projects/stage14/notebook_solutions/14b.py"
+    ]
+  },
+  {
+    "id": "14b-E2",
+    "kind": "exercise",
+    "stage": "14",
+    "question": "Return train indices [0,cut-gap) and test [cut,n); require 0<=gap<cut<n.",
+    "answer": "curriculum/answers/14b.md#14b-e2",
+    "implementations": [
+      "projects/stage14/notebook_solutions/14b.py"
+    ]
+  },
+  {
+    "id": "14b-E3",
+    "kind": "exercise",
+    "stage": "14",
+    "question": "Given period returns and positions decided before each period, subtract fee*absolute position change from each gross return; initial position is zero.",
+    "answer": "curriculum/answers/14b.md#14b-e3",
+    "implementations": [
+      "projects/stage14/notebook_solutions/14b.py"
+    ]
+  },
+  {
+    "id": "14b-O1",
+    "kind": "oral",
+    "stage": "14",
+    "question": "Why is fiscal year insufficient?",
+    "answer": "curriculum/answers/14b.md#14b-o1",
+    "implementations": []
+  },
+  {
+    "id": "14b-O2",
+    "kind": "oral",
+    "stage": "14",
+    "question": "Does a good backtest establish an edge?",
+    "answer": "curriculum/answers/14b.md#14b-o2",
+    "implementations": []
+  },
+  {
+    "id": "14b-T",
+    "kind": "transfer",
+    "stage": "14",
+    "question": "Build walk-forward demand/return experiments and an as-of join on filing publication dates. Compare a naive forecast, report per-fold metrics, and document why random splits overstate performance.",
+    "answer": "curriculum/answers/14b.md#14b-t",
+    "implementations": [
+      "projects/stage14/finance_lab.py",
+      "projects/stage14/solution.py"
+    ]
+  },
+  {
+    "id": "15a-E1",
+    "kind": "exercise",
+    "stage": "15",
+    "question": "Select requested company and years from rows, rejecting duplicate company-year records or missing years. Return chronological rows.",
+    "answer": "curriculum/answers/15a.md#15a-e1",
+    "implementations": [
+      "projects/stage15/notebook_solutions/15a.py"
+    ]
+  },
+  {
+    "id": "15a-E2",
+    "kind": "exercise",
+    "stage": "15",
+    "question": "Return company,year,revenue,operating_margin,fcf,source_id using Decimal inputs; revenue must be positive.",
+    "answer": "curriculum/answers/15a.md#15a-e2",
+    "implementations": [
+      "projects/stage15/notebook_solutions/15a.py"
+    ]
+  },
+  {
+    "id": "15a-E3",
+    "kind": "exercise",
+    "stage": "15",
+    "question": "Return True when every report row has a nonempty source_id contained in allowed_source_ids.",
+    "answer": "curriculum/answers/15a.md#15a-e3",
+    "implementations": [
+      "projects/stage15/notebook_solutions/15a.py"
+    ]
+  },
+  {
+    "id": "15a-O1",
+    "kind": "oral",
+    "stage": "15",
+    "question": "Why compute outside the model?",
+    "answer": "curriculum/answers/15a.md#15a-o1",
+    "implementations": []
+  },
+  {
+    "id": "15a-O2",
+    "kind": "oral",
+    "stage": "15",
+    "question": "What makes a comparison invalid?",
+    "answer": "curriculum/answers/15a.md#15a-o2",
+    "implementations": []
+  },
+  {
+    "id": "15a-T",
+    "kind": "transfer",
+    "stage": "15",
+    "question": "Build the two-company, three-year report through the API. Demonstrate citations, tenant isolation, unknown-company abstention, missing-period handling, and a local-model narrative constrained to verified numbers.",
+    "answer": "curriculum/answers/15a.md#15a-t",
+    "implementations": [
+      "projects/stage15/report_lab.py",
+      "projects/stage15/solution.py",
+      "projects/stage07/integration.py"
+    ]
+  },
+  {
+    "id": "15b-E1",
+    "kind": "exercise",
+    "stage": "15",
+    "question": "Map parsing, retrieval, arithmetic, permission, timeout to data, search, calculator, authorization, infrastructure. Unknown labels return investigate.",
+    "answer": "curriculum/answers/15b.md#15b-e1",
+    "implementations": [
+      "projects/stage15/notebook_solutions/15b.py"
+    ]
+  },
+  {
+    "id": "15b-E2",
+    "kind": "exercise",
+    "stage": "15",
+    "question": "Return sum of nonnegative stage budgets and whether it fits the total target.",
+    "answer": "curriculum/answers/15b.md#15b-e2",
+    "implementations": [
+      "projects/stage15/notebook_solutions/15b.py"
+    ]
+  },
+  {
+    "id": "15b-E3",
+    "kind": "exercise",
+    "stage": "15",
+    "question": "Require nonempty artifact paths for code,tests,evaluation,threat_model,restore,incident,defense. Return missing keys.",
+    "answer": "curriculum/answers/15b.md#15b-e3",
+    "implementations": [
+      "projects/stage15/notebook_solutions/15b.py"
+    ]
+  },
+  {
+    "id": "15b-O1",
+    "kind": "oral",
+    "stage": "15",
+    "question": "What demonstrates transfer?",
+    "answer": "curriculum/answers/15b.md#15b-o1",
+    "implementations": []
+  },
+  {
+    "id": "15b-O2",
+    "kind": "oral",
+    "stage": "15",
+    "question": "What remains after this course?",
+    "answer": "curriculum/answers/15b.md#15b-o2",
+    "implementations": []
+  },
+  {
+    "id": "15b-T",
+    "kind": "transfer",
+    "stage": "15",
+    "question": "Complete the closed-book capstone defense, implement an unseen request in 90 minutes, perform one outage/restore drill, and have another person reproduce the project from your README. Revisit weak checkpoints after 7 and 30 days.",
+    "answer": "curriculum/answers/15b.md#15b-t",
+    "implementations": [
+      "curriculum/answers/DEFENSE.md",
+      "curriculum/CAPSTONE.md",
+      "projects/stage10/RUNBOOK.md",
+      "projects/stage15/report_lab.py"
+    ]
+  },
+  {
+    "id": "00-P1",
+    "kind": "project",
+    "stage": "00",
+    "question": "Create your own notes/, work/, tests/, and project folders; keep secrets and environments out of Git.",
+    "answer": "projects/stage00/SOLUTIONS.md#00-p1",
+    "implementations": [
+      "projects/stage00/hello.py"
+    ]
+  },
+  {
+    "id": "00-P2",
+    "kind": "project",
+    "stage": "00",
+    "question": "Run hello.py from terminal and notebook. Record the interpreter path and explain any differences.",
+    "answer": "projects/stage00/SOLUTIONS.md#00-p2",
+    "implementations": [
+      "projects/stage00/hello.py"
+    ]
+  },
+  {
+    "id": "00-P3",
+    "kind": "project",
+    "stage": "00",
+    "question": "Create a branch, make two commits, inspect a diff, resolve a small practice conflict, and push to your own GitHub repository.",
+    "answer": "projects/stage00/SOLUTIONS.md#00-p3",
+    "implementations": [
+      "projects/stage00/hello.py"
+    ]
+  },
+  {
+    "id": "00-G",
+    "kind": "gate",
+    "stage": "00",
+    "question": "On a fresh terminal, create an environment, run a script, recover from an intentional NameError, and show a commit. Explain AI, ML, DL, NLP, CV, RL, LLMs, agents, data science, and engineering in your own words.",
+    "answer": "projects/stage00/SOLUTIONS.md#00-g",
+    "implementations": []
+  },
+  {
+    "id": "01-P1",
+    "kind": "project",
+    "stage": "01",
+    "question": "Build calculator, temperature/profit tools, text analyzer, contact book, and inventory before the main project.",
+    "answer": "projects/stage01/SOLUTIONS.md#01-p1",
+    "implementations": [
+      "projects/stage01/calculator.py",
+      "tests/test_answer_labs.py",
+      "projects/stage01/contacts.py",
+      "projects/stage01/text_analyzer.py",
+      "projects/stage01/inventory.py"
+    ]
+  },
+  {
+    "id": "01-P2",
+    "kind": "project",
+    "stage": "01",
+    "question": "Build a CSV expense CLI with total, category totals, monthly totals, average, highest expense, and clear line-numbered errors.",
+    "answer": "projects/stage01/SOLUTIONS.md#01-p2",
+    "implementations": [
+      "projects/stage01/solution.py",
+      "projects/stage01/expense_app/cli.py",
+      "tests/test_projects.py",
+      "tests/test_answer_labs.py"
+    ]
+  },
+  {
+    "id": "01-P3",
+    "kind": "project",
+    "stage": "01",
+    "question": "Split parsing, calculation, and CLI code; add tests for empty files, quotes, malformed dates, NaN, negative amounts, and missing columns.",
+    "answer": "projects/stage01/SOLUTIONS.md#01-p3",
+    "implementations": [
+      "projects/stage01/solution.py",
+      "projects/stage01/expense_app/cli.py",
+      "tests/test_projects.py",
+      "tests/test_answer_labs.py",
+      "projects/stage01/expense_app/parser.py",
+      "projects/stage01/expense_app/domain.py",
+      "projects/stage01/algorithms.py"
+    ]
+  },
+  {
+    "id": "01-P4",
+    "kind": "project",
+    "stage": "01",
+    "question": "Refactor one component to a class using composition; profile linear and binary search and explain recursion with a base case.",
+    "answer": "projects/stage01/SOLUTIONS.md#01-p4",
+    "implementations": [
+      "projects/stage01/expense_app/parser.py",
+      "projects/stage01/expense_app/domain.py",
+      "projects/stage01/expense_app/cli.py",
+      "projects/stage01/algorithms.py",
+      "tests/test_answer_labs.py"
+    ]
+  },
+  {
+    "id": "01-G",
+    "kind": "gate",
+    "stage": "01",
+    "question": "In 90 minutes build a new CSV inventory summarizer from a blank file, with validation and five meaningful tests. Explain each function and one time-complexity tradeoff without opening answers.",
+    "answer": "projects/stage01/SOLUTIONS.md#01-g",
+    "implementations": []
+  },
+  {
+    "id": "02-P1",
+    "kind": "project",
+    "stage": "02",
+    "question": "Implement vector addition, dot product, cosine, matrix multiplication, transpose, mean, variance, and standard deviation without NumPy.",
+    "answer": "projects/stage02/SOLUTIONS.md#02-p1",
+    "implementations": [
+      "projects/stage02/math_lab.py"
+    ]
+  },
+  {
+    "id": "02-P2",
+    "kind": "project",
+    "stage": "02",
+    "question": "Plot linear/quadratic/log functions, a 2D rotation, and an eigenvector example; label units and axes.",
+    "answer": "projects/stage02/SOLUTIONS.md#02-p2",
+    "implementations": [
+      "projects/stage02/math_lab.py"
+    ]
+  },
+  {
+    "id": "02-P3",
+    "kind": "project",
+    "stage": "02",
+    "question": "Fit slope and intercept by gradient descent; verify gradients numerically and compare three learning rates.",
+    "answer": "projects/stage02/SOLUTIONS.md#02-p3",
+    "implementations": [
+      "projects/stage02/math_lab.py",
+      "projects/stage02/solution.py"
+    ]
+  },
+  {
+    "id": "02-P4",
+    "kind": "project",
+    "stage": "02",
+    "question": "Simulate Bernoulli/binomial trials and a normal sample; bootstrap a mean interval, compute covariance/correlation, and perform a permutation test.",
+    "answer": "projects/stage02/SOLUTIONS.md#02-p4",
+    "implementations": [
+      "projects/stage02/math_lab.py"
+    ]
+  },
+  {
+    "id": "02-G",
+    "kind": "gate",
+    "stage": "02",
+    "question": "Derive MSE gradients on paper, implement them, diagnose a diverging rate, and explain Bayes using counts in a hypothetical population. Pass changed-shape matrix tests.",
+    "answer": "projects/stage02/SOLUTIONS.md#02-g",
+    "implementations": []
+  },
+  {
+    "id": "03-P1",
+    "kind": "project",
+    "stage": "03",
+    "question": "Profile and clean a CSV with a data-quality report and quarantined invalid records.",
+    "answer": "projects/stage03/SOLUTIONS.md#03-p1",
+    "implementations": [
+      "projects/stage03/data_lab.py"
+    ]
+  },
+  {
+    "id": "03-P2",
+    "kind": "project",
+    "stage": "03",
+    "question": "Design a normalized relational schema and write the complete SQL worksheet in EXTRA_LABS.md; examine index plans.",
+    "answer": "projects/stage03/SOLUTIONS.md#03-p2",
+    "implementations": [
+      "projects/stage03/queries.sql",
+      "projects/stage03/ingest.py"
+    ]
+  },
+  {
+    "id": "03-P3",
+    "kind": "project",
+    "stage": "03",
+    "question": "Implement GET /records, /summary, /statistics and POST /records, with persistent storage and tenant isolation.",
+    "answer": "projects/stage03/SOLUTIONS.md#03-p3",
+    "implementations": [
+      "projects/stage03/ingest.py",
+      "projects/stage03/solution.py",
+      "projects/api.py",
+      "projects/stage10/RUNBOOK.md"
+    ]
+  },
+  {
+    "id": "03-P4",
+    "kind": "project",
+    "stage": "03",
+    "question": "Run first on SQLite and then PostgreSQL via Compose. Ingest CSV, restart the API, verify totals, and test rollback and invalid requests.",
+    "answer": "projects/stage03/SOLUTIONS.md#03-p4",
+    "implementations": [
+      "projects/stage03/queries.sql",
+      "projects/stage03/ingest.py",
+      "projects/stage03/solution.py",
+      "projects/api.py",
+      "projects/stage10/RUNBOOK.md"
+    ]
+  },
+  {
+    "id": "03-G",
+    "kind": "gate",
+    "stage": "03",
+    "question": "Write a join and window query from scratch; explain a query plan; trace an HTTP request through auth, validation, transaction, and response. Demonstrate persistence and tenant isolation.",
+    "answer": "projects/stage03/SOLUTIONS.md#03-g",
+    "implementations": []
+  },
+  {
+    "id": "04-P1",
+    "kind": "project",
+    "stage": "04",
+    "question": "Use the supplied fixed train/validation/test split; verify template groups never cross boundaries.",
+    "answer": "projects/stage04/SOLUTIONS.md#04-p1",
+    "implementations": [
+      "projects/stage04/solution.py",
+      "projects/stage04/experiments.py",
+      "projects/stage04/api.py",
+      "projects/stage04/persistence.py"
+    ]
+  },
+  {
+    "id": "04-P2",
+    "kind": "project",
+    "stage": "04",
+    "question": "Compare majority, logistic, forest, and boosting classifiers; select on validation macro-F1, then evaluate once on test.",
+    "answer": "projects/stage04/SOLUTIONS.md#04-p2",
+    "implementations": [
+      "projects/stage04/solution.py",
+      "projects/stage04/experiments.py",
+      "projects/stage04/api.py",
+      "projects/stage04/persistence.py"
+    ]
+  },
+  {
+    "id": "04-P3",
+    "kind": "project",
+    "stage": "04",
+    "question": "Create a demand regression dataset and compare mean, linear, tree, forest, and boosting models using MAE/RMSE/R².",
+    "answer": "projects/stage04/SOLUTIONS.md#04-p3",
+    "implementations": [
+      "projects/stage04/solution.py",
+      "projects/stage04/experiments.py",
+      "projects/stage04/api.py",
+      "projects/stage04/persistence.py"
+    ]
+  },
+  {
+    "id": "04-P4",
+    "kind": "project",
+    "stage": "04",
+    "question": "Compare KMeans/DBSCAN on blobs and moons, investigate PCA, and collect 20+ independent ticket errors for a model card.",
+    "answer": "projects/stage04/SOLUTIONS.md#04-p4",
+    "implementations": [
+      "projects/stage04/experiments.py"
+    ]
+  },
+  {
+    "id": "04-P5",
+    "kind": "project",
+    "stage": "04",
+    "question": "Expose one saved trusted classifier through a prediction API; validate input size and return label scores with calibration limitations.",
+    "answer": "projects/stage04/SOLUTIONS.md#04-p5",
+    "implementations": [
+      "projects/stage04/solution.py",
+      "projects/stage04/experiments.py",
+      "projects/stage04/api.py",
+      "projects/stage04/persistence.py"
+    ]
+  },
+  {
+    "id": "04-G",
+    "kind": "gate",
+    "stage": "04",
+    "question": "Spot three leakage mechanisms, justify a split and metric, implement a pipeline, and explain five wrong predictions. Train on a new dataset without copying the notebook.",
+    "answer": "projects/stage04/SOLUTIONS.md#04-g",
+    "implementations": []
+  },
+  {
+    "id": "05-P1",
+    "kind": "project",
+    "stage": "05",
+    "question": "Implement a two-layer NumPy XOR network and check analytical gradients against finite differences.",
+    "answer": "projects/stage05/SOLUTIONS.md#05-p1",
+    "implementations": [
+      "projects/stage05/experiments.py",
+      "projects/stage05/numpy_xor.py"
+    ]
+  },
+  {
+    "id": "05-P2",
+    "kind": "project",
+    "stage": "05",
+    "question": "Train an MLP and CNN on the same digits split using CPU, with a real DataLoader and validation loop.",
+    "answer": "projects/stage05/SOLUTIONS.md#05-p2",
+    "implementations": [
+      "projects/stage05/experiments.py"
+    ]
+  },
+  {
+    "id": "05-P3",
+    "kind": "project",
+    "stage": "05",
+    "question": "Save training curves and the best validation checkpoint; evaluate test once after selection.",
+    "answer": "projects/stage05/SOLUTIONS.md#05-p3",
+    "implementations": [
+      "projects/stage05/experiments.py"
+    ]
+  },
+  {
+    "id": "05-P4",
+    "kind": "project",
+    "stage": "05",
+    "question": "Run controlled learning-rate, dropout, and normalization experiments; record seed, parameter count, runtime, and failure diagnosis.",
+    "answer": "projects/stage05/SOLUTIONS.md#05-p4",
+    "implementations": [
+      "projects/stage05/experiments.py"
+    ]
+  },
+  {
+    "id": "05-G",
+    "kind": "gate",
+    "stage": "05",
+    "question": "Write a training loop from memory, overfit a tiny batch, explain tensor shapes and chain rule, then diagnose an injected gradient/mode bug.",
+    "answer": "projects/stage05/SOLUTIONS.md#05-g",
+    "implementations": []
+  },
+  {
+    "id": "06-P1",
+    "kind": "project",
+    "stage": "06",
+    "question": "Implement and visualize causal attention; perturb a future token and prove earlier outputs do not change.",
+    "answer": "projects/stage06/SOLUTIONS.md#06-p1",
+    "implementations": [
+      "projects/stage06/attention_lab.py"
+    ]
+  },
+  {
+    "id": "06-P2",
+    "kind": "project",
+    "stage": "06",
+    "question": "Train the tiny transformer on the bundled corpus; log held-out loss and inspect generated text.",
+    "answer": "projects/stage06/SOLUTIONS.md#06-p2",
+    "implementations": [
+      "projects/stage06/cache_lab.py",
+      "projects/stage06/tiny_lm.py"
+    ]
+  },
+  {
+    "id": "06-P3",
+    "kind": "project",
+    "stage": "06",
+    "question": "Run pretrained.py with an explicitly selected model and immutable revision; compare pre/post-adaptation validation and final test.",
+    "answer": "projects/stage06/SOLUTIONS.md#06-p3",
+    "implementations": [
+      "projects/stage06/attention_lab.py",
+      "projects/stage06/pretrained.py",
+      "projects/stage06/qlora.py",
+      "requirements/qlora.txt"
+    ]
+  },
+  {
+    "id": "06-P4",
+    "kind": "project",
+    "stage": "06",
+    "question": "Build extraction with schema validation, exact source spans, currency/scale normalization, and unknown results for unsupported inputs.",
+    "answer": "projects/stage06/SOLUTIONS.md#06-p4",
+    "implementations": [
+      "projects/stage06/attention_lab.py",
+      "projects/stage06/pretrained.py",
+      "projects/stage06/qlora.py",
+      "requirements/qlora.txt"
+    ]
+  },
+  {
+    "id": "06-P5",
+    "kind": "project",
+    "stage": "06",
+    "question": "Compare quantization reconstruction error and LoRA parameter count; document QLoRA hardware requirements and run it only on supported equipment.",
+    "answer": "projects/stage06/SOLUTIONS.md#06-p5",
+    "implementations": [
+      "projects/stage06/attention_lab.py",
+      "projects/stage06/pretrained.py",
+      "projects/stage06/qlora.py",
+      "requirements/qlora.txt"
+    ]
+  },
+  {
+    "id": "06-G",
+    "kind": "gate",
+    "stage": "06",
+    "question": "Explain attention and KV cache, implement a causal block, debug target leakage, compare fine-tuning options, and validate a deliberately malformed or unsupported extraction.",
+    "answer": "projects/stage06/SOLUTIONS.md#06-g",
+    "implementations": []
+  },
+  {
+    "id": "07-P1",
+    "kind": "project",
+    "stage": "07",
+    "question": "Build the lexical baseline and label relevant source chunks for questions before tuning.",
+    "answer": "projects/stage07/SOLUTIONS.md#07-p1",
+    "implementations": [
+      "projects/stage07/retrieval_lab.py",
+      "projects/stage07/integration.py"
+    ]
+  },
+  {
+    "id": "07-P2",
+    "kind": "project",
+    "stage": "07",
+    "question": "Ingest at least three formats, inspect extracted tables, and retain source/version/page or offset metadata.",
+    "answer": "projects/stage07/SOLUTIONS.md#07-p2",
+    "implementations": [
+      "projects/stage07/integration.py",
+      "projects/stage12/security_lab.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "07-P3",
+    "kind": "project",
+    "stage": "07",
+    "question": "Run learned embeddings and pgvector integration; compare keyword, dense, RRF hybrid, and cross-encoder reranking.",
+    "answer": "projects/stage07/SOLUTIONS.md#07-p3",
+    "implementations": [
+      "projects/stage07/retrieval_lab.py",
+      "projects/stage07/integration.py",
+      "projects/stage12/security_lab.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "07-P4",
+    "kind": "project",
+    "stage": "07",
+    "question": "Add a local generator and claim-level citation review; distinguish unsupported answers from empty retrieval.",
+    "answer": "projects/stage07/SOLUTIONS.md#07-p4",
+    "implementations": [
+      "projects/stage07/integration.py",
+      "projects/stage12/security_lab.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "07-P5",
+    "kind": "project",
+    "stage": "07",
+    "question": "Test two tenants, public documents, permission changes, stale indexes, and malicious document instructions.",
+    "answer": "projects/stage07/SOLUTIONS.md#07-p5",
+    "implementations": [
+      "projects/stage07/integration.py",
+      "projects/stage12/security_lab.py",
+      "curriculum/answers/OPERATIONS.md",
+      "projects/stage08/workflow_lab.py",
+      "projects/stage10/failure_lab.py"
+    ]
+  },
+  {
+    "id": "07-G",
+    "kind": "gate",
+    "stage": "07",
+    "question": "Diagnose one failure each from parsing, chunking, embedding, ranking, reranking, and generation. Prove no cross-tenant evidence reaches the model.",
+    "answer": "projects/stage07/SOLUTIONS.md#07-g",
+    "implementations": []
+  },
+  {
+    "id": "08-P1",
+    "kind": "project",
+    "stage": "08",
+    "question": "Implement document-search, financial-record lookup, and calculator tools with schemas and server-side scope.",
+    "answer": "projects/stage08/SOLUTIONS.md#08-p1",
+    "implementations": [
+      "projects/stage08/research.py",
+      "projects/stage08/workflow_lab.py",
+      "projects/stage10/failure_lab.py",
+      "tests/test_projects.py",
+      "tests/test_answer_labs.py"
+    ]
+  },
+  {
+    "id": "08-P2",
+    "kind": "project",
+    "stage": "08",
+    "question": "Create a plain Python workflow, then the equivalent LangGraph; compare traces on the same requests.",
+    "answer": "projects/stage08/SOLUTIONS.md#08-p2",
+    "implementations": [
+      "projects/stage08/solution.py",
+      "projects/stage08/workflow_lab.py"
+    ]
+  },
+  {
+    "id": "08-P3",
+    "kind": "project",
+    "stage": "08",
+    "question": "Persist a checkpoint, interrupt before a proposed action, bind approval to exact content, resume or deny, and isolate run IDs.",
+    "answer": "projects/stage08/SOLUTIONS.md#08-p3",
+    "implementations": [
+      "projects/stage08/solution.py",
+      "projects/stage08/workflow_lab.py"
+    ]
+  },
+  {
+    "id": "08-P4",
+    "kind": "project",
+    "stage": "08",
+    "question": "Inject transient failures, malformed arguments, repeated calls, timeouts, and budget exhaustion.",
+    "answer": "projects/stage08/SOLUTIONS.md#08-p4",
+    "implementations": [
+      "projects/stage08/research.py",
+      "projects/stage08/workflow_lab.py",
+      "projects/stage10/failure_lab.py",
+      "tests/test_projects.py",
+      "tests/test_answer_labs.py"
+    ]
+  },
+  {
+    "id": "08-P5",
+    "kind": "project",
+    "stage": "08",
+    "question": "Only as an experiment, split research and checking into two workers and compare task success, calls, latency, and cost.",
+    "answer": "projects/stage08/SOLUTIONS.md#08-p5",
+    "implementations": [
+      "projects/stage08/solution.py",
+      "projects/stage08/workflow_lab.py"
+    ]
+  },
+  {
+    "id": "08-G",
+    "kind": "gate",
+    "stage": "08",
+    "question": "Show correct tool selection, arguments, bounded termination, visible failures, denied altered approvals, and isolated state. Explain when a fixed workflow is preferable.",
+    "answer": "projects/stage08/SOLUTIONS.md#08-g",
+    "implementations": []
+  },
+  {
+    "id": "09-P1",
+    "kind": "project",
+    "stage": "09",
+    "question": "Estimate weights and KV cache for three sizes/precisions/context lengths, then compare to actual memory.",
+    "answer": "projects/stage09/SOLUTIONS.md#09-p1",
+    "implementations": [
+      "projects/stage09/benchmark.py"
+    ]
+  },
+  {
+    "id": "09-P2",
+    "kind": "project",
+    "stage": "09",
+    "question": "Install a compatible local server and select a licensed model that fits; record exact model ID/revision.",
+    "answer": "projects/stage09/SOLUTIONS.md#09-p2",
+    "implementations": [
+      "projects/stage09/benchmark.py",
+      "projects/stage09/serve.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "09-P3",
+    "kind": "project",
+    "stage": "09",
+    "question": "Run native Ollama requests and, on supported hardware, vLLM-compatible requests.",
+    "answer": "projects/stage09/SOLUTIONS.md#09-p3",
+    "implementations": [
+      "projects/stage09/benchmark.py",
+      "projects/stage09/serve.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "09-P4",
+    "kind": "project",
+    "stage": "09",
+    "question": "Measure 30+ warm/cold observations and concurrency levels with prompt/output lengths, p50/p95, failures, and resource use.",
+    "answer": "projects/stage09/SOLUTIONS.md#09-p4",
+    "implementations": [
+      "projects/stage09/benchmark.py",
+      "projects/stage09/serve.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "09-P5",
+    "kind": "project",
+    "stage": "09",
+    "question": "Connect the Stage 07 assistant to the local endpoint and verify data does not leave the intended host.",
+    "answer": "projects/stage09/SOLUTIONS.md#09-p5",
+    "implementations": [
+      "projects/stage07/integration.py",
+      "projects/stage12/security_lab.py",
+      "curriculum/answers/OPERATIONS.md",
+      "projects/stage09/benchmark.py",
+      "projects/stage09/serve.py"
+    ]
+  },
+  {
+    "id": "09-G",
+    "kind": "gate",
+    "stage": "09",
+    "question": "Explain a measured bottleneck, enforce timeouts/output bounds, demonstrate model-unavailable failure, and justify a hardware/precision choice from evidence.",
+    "answer": "projects/stage09/SOLUTIONS.md#09-g",
+    "implementations": []
+  },
+  {
+    "id": "10-P1",
+    "kind": "project",
+    "stage": "10",
+    "question": "Run the API and PostgreSQL using the provided Dockerfile/Compose, then inspect networking and persistent data.",
+    "answer": "projects/stage10/SOLUTIONS.md#10-p1",
+    "implementations": [
+      "projects/stage10/Dockerfile",
+      "compose.yaml",
+      ".github/workflows/course.yml",
+      "projects/stage10/RUNBOOK.md",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "10-P2",
+    "kind": "project",
+    "stage": "10",
+    "question": "Add request IDs, versioned events, safe logs, latency/error metrics, and an operational dashboard or report.",
+    "answer": "projects/stage10/SOLUTIONS.md#10-p2",
+    "implementations": [
+      "projects/stage10/failure_lab.py",
+      "projects/stage12/security_lab.py",
+      "projects/stage10/RUNBOOK.md"
+    ]
+  },
+  {
+    "id": "10-P3",
+    "kind": "project",
+    "stage": "10",
+    "question": "Simulate database/model outages, bad auth, malformed/huge input, corrupt files, and exhausted capacity.",
+    "answer": "projects/stage10/SOLUTIONS.md#10-p3",
+    "implementations": [
+      "projects/stage10/failure_lab.py",
+      "projects/stage12/security_lab.py",
+      "projects/stage10/RUNBOOK.md"
+    ]
+  },
+  {
+    "id": "10-P4",
+    "kind": "project",
+    "stage": "10",
+    "question": "Perform backup and restore into a separate database; prove row counts and application reads after restore.",
+    "answer": "projects/stage10/SOLUTIONS.md#10-p4",
+    "implementations": [
+      "projects/stage10/Dockerfile",
+      "compose.yaml",
+      ".github/workflows/course.yml",
+      "projects/stage10/RUNBOOK.md",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "10-P5",
+    "kind": "project",
+    "stage": "10",
+    "question": "Add CI, create a release lock and image digest, rehearse rollback, and document a Coolify deployment with private database networking and HTTPS.",
+    "answer": "projects/stage10/SOLUTIONS.md#10-p5",
+    "implementations": [
+      "projects/stage10/Dockerfile",
+      "compose.yaml",
+      ".github/workflows/course.yml",
+      "projects/stage10/RUNBOOK.md",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "10-G",
+    "kind": "gate",
+    "stage": "10",
+    "question": "Reproduce deployment from a fresh checkout, survive an injected outage, restore a backup, identify a slow component from measurements, and execute a documented rollback.",
+    "answer": "projects/stage10/SOLUTIONS.md#10-g",
+    "implementations": []
+  },
+  {
+    "id": "11-P1",
+    "kind": "project",
+    "stage": "11",
+    "question": "Generate at least one million deterministic transactions without collecting them to the driver.",
+    "answer": "projects/stage11/SOLUTIONS.md#11-p1",
+    "implementations": [
+      "projects/stage11/partition_lab.py",
+      "projects/stage11/solution.py"
+    ]
+  },
+  {
+    "id": "11-P2",
+    "kind": "project",
+    "stage": "11",
+    "question": "Calculate grouped sums/counts, daily trends, anomalies, and window statistics; write Parquet.",
+    "answer": "projects/stage11/SOLUTIONS.md#11-p2",
+    "implementations": [
+      "projects/stage11/partition_lab.py",
+      "projects/stage11/solution.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "11-P3",
+    "kind": "project",
+    "stage": "11",
+    "question": "Compare partitions and inspect physical plans; demonstrate skew and a broadcast-join tradeoff.",
+    "answer": "projects/stage11/SOLUTIONS.md#11-p3",
+    "implementations": [
+      "projects/stage11/partition_lab.py",
+      "projects/stage11/solution.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "11-P4",
+    "kind": "project",
+    "stage": "11",
+    "question": "Check row count, schema, total cents, and a sampled group against a Python reference.",
+    "answer": "projects/stage11/SOLUTIONS.md#11-p4",
+    "implementations": [
+      "projects/stage11/partition_lab.py",
+      "projects/stage11/solution.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "11-P5",
+    "kind": "project",
+    "stage": "11",
+    "question": "Repeat on an actual cluster or document the operational gap if only local mode is available.",
+    "answer": "projects/stage11/SOLUTIONS.md#11-p5",
+    "implementations": [
+      "projects/stage11/partition_lab.py",
+      "projects/stage11/solution.py",
+      "curriculum/answers/OPERATIONS.md"
+    ]
+  },
+  {
+    "id": "11-G",
+    "kind": "gate",
+    "stage": "11",
+    "question": "Explain a shuffle in an actual plan, fix a skewed aggregation, reconcile distributed totals, and justify a storage format.",
+    "answer": "projects/stage11/SOLUTIONS.md#11-g",
+    "implementations": []
+  },
+  {
+    "id": "12-P1",
+    "kind": "project",
+    "stage": "12",
+    "question": "Map assets, actors, entry points, trust boundaries, controls, tests, and residual risks.",
+    "answer": "projects/stage12/SOLUTIONS.md#12-p1",
+    "implementations": [
+      "projects/stage12/security_lab.py"
+    ]
+  },
+  {
+    "id": "12-P2",
+    "kind": "project",
+    "stage": "12",
+    "question": "Write at least 20 attacks against your own app: cross-tenant access, prompt injection, malformed tool calls, oversized inputs, and forged citations.",
+    "answer": "projects/stage12/SOLUTIONS.md#12-p2",
+    "implementations": [
+      "projects/stage12/security_lab.py"
+    ]
+  },
+  {
+    "id": "12-P3",
+    "kind": "project",
+    "stage": "12",
+    "question": "Test allowed access alongside every denial; cover warm caches, revocation, graph state, logs, and document fetches.",
+    "answer": "projects/stage12/SOLUTIONS.md#12-p3",
+    "implementations": [
+      "projects/stage12/security_lab.py",
+      "projects/stage08/workflow_lab.py",
+      "projects/stage10/failure_lab.py"
+    ]
+  },
+  {
+    "id": "12-P4",
+    "kind": "project",
+    "stage": "12",
+    "question": "Record observed behavior and fix failures with code-enforced policy rather than a stronger-sounding prompt.",
+    "answer": "projects/stage12/SOLUTIONS.md#12-p4",
+    "implementations": [
+      "projects/stage12/security_lab.py",
+      "projects/stage08/workflow_lab.py",
+      "projects/stage10/failure_lab.py"
+    ]
+  },
+  {
+    "id": "12-G",
+    "kind": "gate",
+    "stage": "12",
+    "question": "Demonstrate access boundaries with positive/negative tests, explain why prompt-only defenses fail, and trace one incident without exposing secrets.",
+    "answer": "projects/stage12/SOLUTIONS.md#12-g",
+    "implementations": []
+  },
+  {
+    "id": "13-P1",
+    "kind": "project",
+    "stage": "13",
+    "question": "Expand the nine-case fixture to at least 60 reviewed cases; preserve 20 as a locked holdout.",
+    "answer": "projects/stage13/SOLUTIONS.md#13-p1",
+    "implementations": [
+      "projects/stage13/evaluation_lab.py",
+      "datasets/evals.jsonl"
+    ]
+  },
+  {
+    "id": "13-P2",
+    "kind": "project",
+    "stage": "13",
+    "question": "Separate retrieval, numeric correctness, citation support, abstention, permissions, tool behavior, and service quality.",
+    "answer": "projects/stage13/SOLUTIONS.md#13-p2",
+    "implementations": [
+      "projects/stage13/evaluation_lab.py",
+      "datasets/evals.jsonl",
+      "projects/stage13/solution.py"
+    ]
+  },
+  {
+    "id": "13-P3",
+    "kind": "project",
+    "stage": "13",
+    "question": "Compare two candidates on paired questions, report slices and uncertainty, and inspect regressions.",
+    "answer": "projects/stage13/SOLUTIONS.md#13-p3",
+    "implementations": [
+      "projects/stage13/evaluation_lab.py",
+      "projects/stage13/solution.py"
+    ]
+  },
+  {
+    "id": "13-P4",
+    "kind": "project",
+    "stage": "13",
+    "question": "Write machine-readable reports and fail CI on predeclared hard gates; version every component and label set.",
+    "answer": "projects/stage13/SOLUTIONS.md#13-p4",
+    "implementations": [
+      "projects/stage13/evaluation_lab.py",
+      "projects/stage13/solution.py"
+    ]
+  },
+  {
+    "id": "13-G",
+    "kind": "gate",
+    "stage": "13",
+    "question": "Find a deliberately misleading evaluation, fix the split/metric, compare two systems, and defend a release decision including uncertainty and weak slices.",
+    "answer": "projects/stage13/SOLUTIONS.md#13-g",
+    "implementations": []
+  },
+  {
+    "id": "14-P1",
+    "kind": "project",
+    "stage": "14",
+    "question": "Reconcile fictional statements and calculate all ratios in the roadmap with source IDs and undefined-case policy.",
+    "answer": "projects/stage14/SOLUTIONS.md#14-p1",
+    "implementations": [
+      "projects/stage14/finance_lab.py",
+      "projects/stage14/solution.py"
+    ]
+  },
+  {
+    "id": "14-P2",
+    "kind": "project",
+    "stage": "14",
+    "question": "Compare three years for two companies; distinguish period, currency, scale, average versus ending balances, and capex signs.",
+    "answer": "projects/stage14/SOLUTIONS.md#14-p2",
+    "implementations": [
+      "projects/stage14/finance_lab.py",
+      "projects/stage14/solution.py"
+    ]
+  },
+  {
+    "id": "14-P3",
+    "kind": "project",
+    "stage": "14",
+    "question": "Create past-only features, walk-forward splits, and an as-of publication-date join.",
+    "answer": "projects/stage14/SOLUTIONS.md#14-p3",
+    "implementations": [
+      "projects/stage14/finance_lab.py",
+      "projects/stage14/solution.py"
+    ]
+  },
+  {
+    "id": "14-P4",
+    "kind": "project",
+    "stage": "14",
+    "question": "Compare a forecast to naive baselines; include turnover/cost assumptions if building a strategy. Explain why no predictive edge is established.",
+    "answer": "projects/stage14/SOLUTIONS.md#14-p4",
+    "implementations": [
+      "projects/stage14/finance_lab.py",
+      "projects/stage14/solution.py"
+    ]
+  },
+  {
+    "id": "14-G",
+    "kind": "gate",
+    "stage": "14",
+    "question": "Explain all units in a comparison, identify a publication-time leak, build a walk-forward baseline, and explain why a backtest is not proof of investment value.",
+    "answer": "projects/stage14/SOLUTIONS.md#14-g",
+    "implementations": []
+  },
+  {
+    "id": "15-P1",
+    "kind": "project",
+    "stage": "15",
+    "question": "Build an independent version from the brief; use reference code only after attempting each component.",
+    "answer": "projects/stage15/SOLUTIONS.md#15-p1",
+    "implementations": [
+      "curriculum/answers/DEFENSE.md",
+      "curriculum/CAPSTONE.md",
+      "projects/stage10/RUNBOOK.md",
+      "projects/stage15/report_lab.py"
+    ]
+  },
+  {
+    "id": "15-P2",
+    "kind": "project",
+    "stage": "15",
+    "question": "Answer a two-company three-year revenue/margin/FCF comparison with deterministic calculations and citations.",
+    "answer": "projects/stage15/SOLUTIONS.md#15-p2",
+    "implementations": [
+      "projects/stage15/report_lab.py",
+      "projects/stage15/solution.py",
+      "projects/stage07/integration.py"
+    ]
+  },
+  {
+    "id": "15-P3",
+    "kind": "project",
+    "stage": "15",
+    "question": "Integrate learned embeddings, PostgreSQL, local model serving, bounded tools, permissions, and a usable client such as the API docs or a small CLI.",
+    "answer": "projects/stage15/SOLUTIONS.md#15-p3",
+    "implementations": [
+      "projects/stage07/integration.py",
+      "projects/stage12/security_lab.py",
+      "curriculum/answers/OPERATIONS.md",
+      "projects/stage08/research.py",
+      "projects/stage08/workflow_lab.py",
+      "projects/stage10/failure_lab.py",
+      "tests/test_projects.py",
+      "tests/test_answer_labs.py",
+      "projects/stage09/benchmark.py",
+      "projects/stage09/serve.py",
+      "projects/stage15/report_lab.py",
+      "projects/stage15/solution.py"
+    ]
+  },
+  {
+    "id": "15-P4",
+    "kind": "project",
+    "stage": "15",
+    "question": "Run the full failure matrix, restore backup, rehearse deployment/rollback, and write an architecture decision record.",
+    "answer": "projects/stage15/SOLUTIONS.md#15-p4",
+    "implementations": [
+      "projects/stage10/failure_lab.py",
+      "projects/stage12/security_lab.py",
+      "projects/stage10/RUNBOOK.md",
+      "projects/stage10/Dockerfile",
+      "compose.yaml",
+      ".github/workflows/course.yml",
+      "curriculum/answers/OPERATIONS.md",
+      "curriculum/answers/DEFENSE.md",
+      "curriculum/CAPSTONE.md",
+      "projects/stage15/report_lab.py"
+    ]
+  },
+  {
+    "id": "15-P5",
+    "kind": "project",
+    "stage": "15",
+    "question": "Grow the evaluation corpus to at least 100 reviewed cases and target 500 as the domain expands; preserve a locked holdout.",
+    "answer": "projects/stage15/SOLUTIONS.md#15-p5",
+    "implementations": [
+      "projects/stage13/evaluation_lab.py",
+      "datasets/evals.jsonl",
+      "projects/stage13/solution.py"
+    ]
+  },
+  {
+    "id": "15-P6",
+    "kind": "project",
+    "stage": "15",
+    "question": "Complete a 90-minute unseen feature, explain every component, and have another person reproduce the system.",
+    "answer": "projects/stage15/SOLUTIONS.md#15-p6",
+    "implementations": [
+      "curriculum/answers/DEFENSE.md",
+      "curriculum/CAPSTONE.md",
+      "projects/stage10/RUNBOOK.md",
+      "projects/stage15/report_lab.py"
+    ]
+  },
+  {
+    "id": "15-G",
+    "kind": "gate",
+    "stage": "15",
+    "question": "Score at least 80/100 with every critical gate passed; demonstrate an unseen task, permission isolation, correct citations/calculations, safe failures, restore, and reproducibility.",
+    "answer": "projects/stage15/SOLUTIONS.md#15-g",
+    "implementations": []
+  }
+]

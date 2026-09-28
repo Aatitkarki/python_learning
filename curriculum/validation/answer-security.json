@@ -1,0 +1,714 @@
+{
+  "checks": [
+    {
+      "id": "missing-records",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "missing-summary",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "missing-statistics",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "missing-search",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "wrong-records",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "wrong-summary",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "wrong-statistics",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "wrong-search",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "revoked-records",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "revoked-summary",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "revoked-statistics",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "revoked-search",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "id": "bad-record-0",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "bad-record-1",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "bad-record-2",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "bad-record-3",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "bad-record-4",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "bad-record-5",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "huge-prompt",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "spoof-document-tenant",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "sql-injection-as-company",
+      "expected": 404,
+      "observed": 404,
+      "passed": true
+    },
+    {
+      "id": "denied-financial-data",
+      "expected": 404,
+      "observed": 404,
+      "passed": true
+    },
+    {
+      "id": "huge-page",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "negative-offset",
+      "expected": 422,
+      "observed": 422,
+      "passed": true
+    },
+    {
+      "id": "injection-24",
+      "passed": true
+    },
+    {
+      "id": "injection-25",
+      "passed": true
+    },
+    {
+      "id": "injection-26",
+      "passed": true
+    },
+    {
+      "id": "warm-cache-isolation",
+      "passed": true
+    },
+    {
+      "id": "warm-cache-revocation",
+      "passed": true
+    }
+  ],
+  "permission_matrix": [
+    {
+      "tenant": "A",
+      "resource": "b-private",
+      "expected": false,
+      "observed": false,
+      "passed": true
+    },
+    {
+      "tenant": "A",
+      "resource": "policy-public",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "tenant": "B",
+      "resource": "b-private",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "tenant": "B",
+      "resource": "policy-public",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    }
+  ],
+  "endpoint_matrix": [
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "get",
+      "route": "/health",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "get",
+      "route": "/ready",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "get",
+      "route": "/records",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "post",
+      "route": "/records",
+      "expected": 201,
+      "observed": 201,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "get",
+      "route": "/summary",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "get",
+      "route": "/statistics",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "post",
+      "route": "/documents",
+      "expected": 201,
+      "observed": 201,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "get",
+      "route": "/search?q=expense",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "post",
+      "route": "/answer",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alice",
+      "tenant": "A",
+      "method": "post",
+      "route": "/compare",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "get",
+      "route": "/health",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "get",
+      "route": "/ready",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "get",
+      "route": "/records",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "post",
+      "route": "/records",
+      "expected": 201,
+      "observed": 201,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "get",
+      "route": "/summary",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "get",
+      "route": "/statistics",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "post",
+      "route": "/documents",
+      "expected": 201,
+      "observed": 201,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "get",
+      "route": "/search?q=expense",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "post",
+      "route": "/answer",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "alex",
+      "tenant": "A",
+      "method": "post",
+      "route": "/compare",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "get",
+      "route": "/health",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "get",
+      "route": "/ready",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "get",
+      "route": "/records",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "post",
+      "route": "/records",
+      "expected": 201,
+      "observed": 201,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "get",
+      "route": "/summary",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "get",
+      "route": "/statistics",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "post",
+      "route": "/documents",
+      "expected": 201,
+      "observed": 201,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "get",
+      "route": "/search?q=expense",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "post",
+      "route": "/answer",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "bob",
+      "tenant": "B",
+      "method": "post",
+      "route": "/compare",
+      "expected": 404,
+      "observed": 404,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "get",
+      "route": "/health",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "get",
+      "route": "/ready",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "get",
+      "route": "/records",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "post",
+      "route": "/records",
+      "expected": 201,
+      "observed": 201,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "get",
+      "route": "/summary",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "get",
+      "route": "/statistics",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "post",
+      "route": "/documents",
+      "expected": 201,
+      "observed": 201,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "get",
+      "route": "/search?q=expense",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "post",
+      "route": "/answer",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "blair",
+      "tenant": "B",
+      "method": "post",
+      "route": "/compare",
+      "expected": 404,
+      "observed": 404,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "get",
+      "route": "/health",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "get",
+      "route": "/ready",
+      "expected": 200,
+      "observed": 200,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "get",
+      "route": "/records",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "post",
+      "route": "/records",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "get",
+      "route": "/summary",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "get",
+      "route": "/statistics",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "post",
+      "route": "/documents",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "get",
+      "route": "/search?q=expense",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "post",
+      "route": "/answer",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    },
+    {
+      "user": "anonymous",
+      "method": "post",
+      "route": "/compare",
+      "expected": 401,
+      "observed": 401,
+      "passed": true
+    }
+  ],
+  "threat_model": [
+    {
+      "asset": "private reports",
+      "entry": "untrusted retrieved instructions",
+      "impact": "cross-tenant disclosure",
+      "control": "authorize before retrieval and tool access",
+      "residual": "model prose can still be misleading"
+    },
+    {
+      "asset": "credentials",
+      "entry": "logs or prompts",
+      "impact": "secret disclosure",
+      "control": "allowlist log fields; keep keys out of context",
+      "residual": "operator mistakes need audit"
+    },
+    {
+      "asset": "runtime",
+      "entry": "dependency installation",
+      "impact": "supply-chain compromise",
+      "control": "pin reviewed releases and verify artifacts",
+      "residual": "not proven by API tests"
+    },
+    {
+      "asset": "financial truth",
+      "entry": "poisoned source numbers",
+      "impact": "wrong calculation",
+      "control": "source provenance and reconciliation",
+      "residual": "authenticated data can still be false"
+    },
+    {
+      "asset": "browser",
+      "entry": "model HTML",
+      "impact": "script injection",
+      "control": "context-appropriate escaping",
+      "residual": "different output contexts require different encoders"
+    },
+    {
+      "asset": "tool authority",
+      "entry": "model-selected action",
+      "impact": "excessive side effects",
+      "control": "strict allowlists and exact-action approval",
+      "residual": "external write idempotency still needed"
+    },
+    {
+      "asset": "system configuration",
+      "entry": "prompt extraction",
+      "impact": "configuration disclosure",
+      "control": "no credentials or permission authority in prompts",
+      "residual": "prompt text itself may leak"
+    },
+    {
+      "asset": "retrieval index",
+      "entry": "stale ACL/cache",
+      "impact": "revoked data disclosure",
+      "control": "recheck authorization and version cache keys",
+      "residual": "all replicas must invalidate consistently"
+    },
+    {
+      "asset": "answer quality",
+      "entry": "invented citation",
+      "impact": "misinformation",
+      "control": "verify claim value and source support",
+      "residual": "human/source uncertainty remains"
+    },
+    {
+      "asset": "availability",
+      "entry": "huge requests or loops",
+      "impact": "resource exhaustion",
+      "control": "input bounds, quotas, deadlines",
+      "residual": "distributed limits needed with multiple workers"
+    }
+  ],
+  "passed": true,
+  "limits": "No LLM used; checks enforce application scope. Prompt behavior, dependency provenance, and poisoned-source truth need separate review."
+}

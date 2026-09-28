@@ -32,7 +32,27 @@ def chunk_text(text,size=80,overlap=15):
         if start+size>=len(words): break
     return result
 
-def run(dsn, model_id, revision, tenant, query, reranker=None, reranker_revision=None, ollama=None):
+def documents_from_paths(paths, tenant):
+    """Preserve PDF page provenance; reject empty/scanned pages needing OCR."""
+    import hashlib
+    documents = []
+    for name in paths:
+        path = Path(name)
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        if path.suffix.lower() == '.pdf':
+            from pypdf import PdfReader
+            texts = [(page.extract_text() or '', f'{path.name}#page={i}')
+                     for i, page in enumerate(PdfReader(path).pages, 1)]
+        else:
+            texts = [(parse_document(path), path.name)]
+        for i, (text, source) in enumerate(texts):
+            if not text.strip():
+                raise ValueError(f'No usable text in {source}; inspect extraction/OCR')
+            documents.append(dict(id=f'{digest[:16]}-{i}', tenant=tenant,
+                                  public=False, text=text, source=source))
+    return documents
+
+def run(dsn, model_id, revision, tenant, query, reranker=None, reranker_revision=None, ollama=None, document_paths=()):
     import numpy as np
     import psycopg
     from pgvector.psycopg import register_vector
@@ -46,12 +66,13 @@ def run(dsn, model_id, revision, tenant, query, reranker=None, reranker_revision
         # Unbounded vector column stores different model dimensions. This exact scan is a teaching baseline.
         db.execute('CREATE TABLE IF NOT EXISTS learning_chunks (id TEXT, tenant TEXT, version TEXT, body TEXT, source TEXT, embedding vector, PRIMARY KEY(id,tenant,version))')
         # Ingestion is tenant-scoped; this CLI represents a trusted operator, not a public endpoint.
-        for doc in json.loads((ROOT/'datasets/documents.json').read_text()):
+        documents = json.loads((ROOT/'datasets/documents.json').read_text()) + documents_from_paths(document_paths, tenant)
+        for doc in documents:
             if doc['tenant']!=tenant: continue
             for index,(text,offset) in enumerate(chunk_text(doc['text'])):
                 vec=embedding.encode(text,normalize_embeddings=True)
                 db.execute('INSERT INTO learning_chunks VALUES (%s,%s,%s,%s,%s,%s) ON CONFLICT (id,tenant,version) DO UPDATE SET body=EXCLUDED.body,source=EXCLUDED.source,embedding=EXCLUDED.embedding',
-                           (doc['id']+':'+str(index),tenant,version,text,doc['source']+f'#word={offset}',vec))
+                           (doc['id']+':'+str(index),tenant,version,text,doc['source']+('&' if '#' in doc['source'] else '#')+f'word={offset}',vec))
         q=embedding.encode(query,normalize_embeddings=True)
         dense=db.execute('SELECT id,body,source,embedding <=> %s AS distance FROM learning_chunks WHERE tenant=%s AND version=%s ORDER BY distance,id LIMIT 20',(q,tenant,version)).fetchall()
         lexical=db.execute("SELECT id,body,source,ts_rank_cd(to_tsvector('english',body),plainto_tsquery('english',%s)) AS score FROM learning_chunks WHERE tenant=%s AND version=%s AND to_tsvector('english',body) @@ plainto_tsquery('english',%s) ORDER BY score DESC,id LIMIT 20",(query,tenant,version,query)).fetchall()
@@ -76,8 +97,10 @@ def run(dsn, model_id, revision, tenant, query, reranker=None, reranker_revision
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--model',required=True); p.add_argument('--revision',required=True)
     p.add_argument('--tenant',default='A'); p.add_argument('--query',default='Aurora 2025 revenue')
-    p.add_argument('--reranker'); p.add_argument('--reranker-revision'); p.add_argument('--ollama'); a=p.parse_args()
+    p.add_argument('--reranker'); p.add_argument('--reranker-revision'); p.add_argument('--ollama')
+    p.add_argument('--document', action='append', default=[], help='Ingest an additional local Markdown/PDF/HTML/DOCX/JSON file')
+    a=p.parse_args()
     if a.reranker and not a.reranker_revision: p.error('Pin --reranker-revision')
-    print(json.dumps(run(os.environ['DATABASE_URL'],a.model,a.revision,a.tenant,a.query,a.reranker,a.reranker_revision,a.ollama),indent=2))
+    print(json.dumps(run(os.environ['DATABASE_URL'],a.model,a.revision,a.tenant,a.query,a.reranker,a.reranker_revision,a.ollama,a.document),indent=2))
 
 if __name__=='__main__': main()

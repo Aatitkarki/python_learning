@@ -1,0 +1,544 @@
+[
+  {
+    "id": "00a",
+    "starter": "curriculum/assignments/starters/00a.py",
+    "tests": "tests/independent/test_00a.py",
+    "reference": "curriculum/assignments/reference_adapters/00a.py",
+    "guide": "curriculum/assignments/00a.md",
+    "test_functions": [
+      "test_greeting_interpreter_and_budget",
+      "test_fresh_call_has_same_output"
+    ],
+    "evidence": [
+      "Run your own hello.py in a terminal and a fresh notebook; compare interpreter paths.",
+      "Make and explain a Git commit in your own repository; show the actual diff."
+    ]
+  },
+  {
+    "id": "01a",
+    "starter": "curriculum/assignments/starters/01a.py",
+    "tests": "tests/independent/test_01a.py",
+    "reference": "curriculum/assignments/reference_adapters/01a.py",
+    "guide": "curriculum/assignments/01a.md",
+    "test_functions": [
+      "test_calculator_five_cases",
+      "test_converter_five_cases",
+      "test_profit_five_cases",
+      "test_bmi_arithmetic_five_cases",
+      "test_invalid_calculations",
+      "test_loop_recovers_and_quits",
+      "test_programmer_error_is_visible"
+    ],
+    "evidence": [
+      "Demonstrate invalid text, a division by zero, a valid conversion, and quit in a real terminal."
+    ]
+  },
+  {
+    "id": "01b",
+    "starter": "curriculum/assignments/starters/01b.py",
+    "tests": "tests/independent/test_01b.py",
+    "reference": "curriculum/assignments/reference_adapters/01b.py",
+    "guide": "curriculum/assignments/01b.md",
+    "test_functions": [
+      "test_contact_crud_and_duplicate_policy",
+      "test_search_copy_and_persistence",
+      "test_text_policy"
+    ],
+    "evidence": [
+      "Demonstrate saved contacts survive a new process; explain normalization and multilingual text limitations."
+    ]
+  },
+  {
+    "id": "01c",
+    "starter": "curriculum/assignments/starters/01c.py",
+    "tests": "tests/independent/test_01c.py",
+    "reference": "curriculum/assignments/reference_adapters/01c.py",
+    "guide": "curriculum/assignments/01c.md",
+    "test_functions": [
+      "test_exact_csv_totals_quoted_field_and_months",
+      "test_empty_csv_contract",
+      "test_bad_row_points_to_line",
+      "test_missing_columns"
+    ],
+    "evidence": [
+      "Run your CLI on the supplied expenses.csv and an invalid file; record totals, line diagnostics, and exit status."
+    ]
+  },
+  {
+    "id": "01d",
+    "starter": "curriculum/assignments/starters/01d.py",
+    "tests": "tests/independent/test_01d.py",
+    "reference": "curriculum/assignments/reference_adapters/01d.py",
+    "guide": "curriculum/assignments/01d.md",
+    "test_functions": [
+      "test_factorial",
+      "test_invalid_factorial",
+      "test_directory_size_and_symlink_cycle",
+      "test_composition_uses_supplied_repository",
+      "test_cli_handles_file_error",
+      "test_search_experiment_records_both_measurements"
+    ],
+    "evidence": [
+      "Show separate parser/domain/CLI modules, one useful log, a mocked boundary failure, and your measured search comparison including sorting assumptions."
+    ]
+  },
+  {
+    "id": "02a",
+    "starter": "curriculum/assignments/starters/02a.py",
+    "tests": "tests/independent/test_02a.py",
+    "reference": "curriculum/assignments/reference_adapters/02a.py",
+    "guide": "curriculum/assignments/02a.md",
+    "test_functions": [
+      "test_hand_calculated_vectors",
+      "test_transpose_and_rectangular_product",
+      "test_rotation_and_eigenvector",
+      "test_shape_and_zero_direction_errors"
+    ],
+    "evidence": [
+      "Draw original/rotated vectors with labeled axes and units; verify norm preservation.",
+      "Repeat a manual result using NumPy and explain every shape."
+    ]
+  },
+  {
+    "id": "02b",
+    "starter": "curriculum/assignments/starters/02b.py",
+    "tests": "tests/independent/test_02b.py",
+    "reference": "curriculum/assignments/reference_adapters/02b.py",
+    "guide": "curriculum/assignments/02b.md",
+    "test_functions": [
+      "test_one_gradient_step_by_hand",
+      "test_intercept_and_slope_converge",
+      "test_regularization_changes_optimum",
+      "test_gradient_check_and_divergence",
+      "test_invalid_training_pairs"
+    ],
+    "evidence": [
+      "Save loss plots for rates .001/.05/1 with intercept and L2; explain one slow and one diverging run from the update rule."
+    ]
+  },
+  {
+    "id": "02c",
+    "starter": "curriculum/assignments/starters/02c.py",
+    "tests": "tests/independent/test_02c.py",
+    "reference": "curriculum/assignments/reference_adapters/02c.py",
+    "guide": "curriculum/assignments/02c.md",
+    "test_functions": [
+      "test_mean_and_variance_conventions",
+      "test_covariance_and_correlation",
+      "test_statistical_undefined_cases",
+      "test_permutation_identical_and_separated",
+      "test_permutation_validates_repeats"
+    ],
+    "evidence": [
+      "Save seeded 10,000-trial simulation/histogram/percentiles; explain bias, bootstrap assumptions, and multiple testing."
+    ]
+  },
+  {
+    "id": "03a",
+    "starter": "curriculum/assignments/starters/03a.py",
+    "tests": "tests/independent/test_03a.py",
+    "reference": "curriculum/assignments/reference_adapters/03a.py",
+    "guide": "curriculum/assignments/03a.md",
+    "test_functions": [
+      "test_quarantine_and_calendar_arithmetic",
+      "test_blank_nonfinite_and_empty_input"
+    ],
+    "evidence": [
+      "Run on the course CSV, write clean/quarantine/report files, and explain each exclusion and outlier flag."
+    ]
+  },
+  {
+    "id": "03b",
+    "starter": "curriculum/assignments/starters/03b.py",
+    "tests": "tests/independent/test_03b.py",
+    "reference": "curriculum/assignments/reference_adapters/03b.py",
+    "guide": "curriculum/assignments/03b.md",
+    "test_functions": [
+      "test_query_results_on_fixed_schema",
+      "test_two_writes_roll_back"
+    ],
+    "evidence": [
+      "Run the normalized schema and query worksheet on PostgreSQL; demonstrate keys/constraints and transaction rollback.",
+      "Capture EXPLAIN ANALYZE before/after an index on a substantial table; interpret the observed plan."
+    ]
+  },
+  {
+    "id": "03c",
+    "starter": "curriculum/assignments/starters/03c.py",
+    "tests": "tests/independent/test_03c.py",
+    "reference": "curriculum/assignments/reference_adapters/03c.py",
+    "guide": "curriculum/assignments/03c.md",
+    "test_functions": [
+      "test_api_auth_validation_isolation_and_restart",
+      "test_ingestion_is_atomic_and_repeatable"
+    ],
+    "evidence": [
+      "Repeat ingestion against PostgreSQL; restart the actual API and verify persistence and both tenants."
+    ]
+  },
+  {
+    "id": "04a",
+    "starter": "curriculum/assignments/starters/04a.py",
+    "tests": "tests/independent/test_04a.py",
+    "reference": "curriculum/assignments/reference_adapters/04a.py",
+    "guide": "curriculum/assignments/04a.md",
+    "test_functions": [
+      "test_regression_models_and_validation_selection",
+      "test_classifier_reports_heldout_errors"
+    ],
+    "evidence": [
+      "Review group-aware splits and pipeline fitting to prove no validation/test leakage.",
+      "Save a trusted fitted pipeline, reload it into the API, and record identical predictions."
+    ]
+  },
+  {
+    "id": "04b",
+    "starter": "curriculum/assignments/starters/04b.py",
+    "tests": "tests/independent/test_04b.py",
+    "reference": "curriculum/assignments/reference_adapters/04b.py",
+    "guide": "curriculum/assignments/04b.md",
+    "test_functions": [
+      "test_labeled_new_examples",
+      "test_error_review_keeps_correct_controls",
+      "test_clustering_covers_both_shapes"
+    ],
+    "evidence": [
+      "Review >=20 new labels independently of predictions and categorize actual errors.",
+      "Explain clustering shape/scale failures and PCA variance using saved plots."
+    ]
+  },
+  {
+    "id": "05a",
+    "starter": "curriculum/assignments/starters/05a.py",
+    "tests": "tests/independent/test_05a.py",
+    "reference": "curriculum/assignments/reference_adapters/05a.py",
+    "guide": "curriculum/assignments/05a.md",
+    "test_functions": [
+      "test_ten_independent_finite_differences",
+      "test_gradient_steps_reduce_xor_loss"
+    ],
+    "evidence": [
+      "Save SGD/momentum loss curves from identical initial parameters and compare final losses."
+    ]
+  },
+  {
+    "id": "05b",
+    "starter": "curriculum/assignments/starters/05b.py",
+    "tests": "tests/independent/test_05b.py",
+    "reference": "curriculum/assignments/reference_adapters/05b.py",
+    "guide": "curriculum/assignments/05b.md",
+    "test_functions": [
+      "test_cpu_training_artifacts_and_selection"
+    ],
+    "evidence": [
+      "Run the full fixed-budget comparison; show best-validation checkpoint restore, per-class errors, and model card."
+    ]
+  },
+  {
+    "id": "06a",
+    "starter": "curriculum/assignments/starters/06a.py",
+    "tests": "tests/independent/test_06a.py",
+    "reference": "curriculum/assignments/reference_adapters/06a.py",
+    "guide": "curriculum/assignments/06a.md",
+    "test_functions": [
+      "test_stable_normalization_and_entropy",
+      "test_top_k_and_crossing_top_p",
+      "test_future_value_cannot_change_past",
+      "test_invalid_sampling"
+    ],
+    "evidence": [
+      "Save an attention heatmap and real subword vocabulary; explain UNK/PAD/BOS/EOS policies."
+    ]
+  },
+  {
+    "id": "06b",
+    "starter": "curriculum/assignments/starters/06b.py",
+    "tests": "tests/independent/test_06b.py",
+    "reference": "curriculum/assignments/reference_adapters/06b.py",
+    "guide": "curriculum/assignments/06b.md",
+    "test_functions": [
+      "test_cached_logits_positions_and_layer_count",
+      "test_causality_and_context_limit"
+    ],
+    "evidence": [
+      "Train one- and two-block models on the same split/budget; save held-out losses, generated text, and cache timing."
+    ]
+  },
+  {
+    "id": "06c",
+    "starter": "curriculum/assignments/starters/06c.py",
+    "tests": "tests/independent/test_06c.py",
+    "reference": "curriculum/assignments/reference_adapters/06c.py",
+    "guide": "curriculum/assignments/06c.md",
+    "test_functions": [
+      "test_extraction_units_and_exact_source_span",
+      "test_unsupported_or_ambiguous_is_unknown",
+      "test_local_adapter_backward_step"
+    ],
+    "evidence": [
+      "Run a selected downloaded model with immutable revision; record license, frozen/adapted validation, test results, time, and memory.",
+      "Optional CUDA QLoRA remains pending until actually run on supported hardware."
+    ]
+  },
+  {
+    "id": "07a",
+    "starter": "curriculum/assignments/starters/07a.py",
+    "tests": "tests/independent/test_07a.py",
+    "reference": "curriculum/assignments/reference_adapters/07a.py",
+    "guide": "curriculum/assignments/07a.md",
+    "test_functions": [
+      "test_offsets_hashes_and_overlap",
+      "test_real_term_scores_and_permission_filter"
+    ],
+    "evidence": [
+      "Run selected learned embeddings and a cross-encoder on the same labeled queries; compare recall/MRR with keyword/hybrid."
+    ]
+  },
+  {
+    "id": "07b",
+    "starter": "curriculum/assignments/starters/07b.py",
+    "tests": "tests/independent/test_07b.py",
+    "reference": "curriculum/assignments/reference_adapters/07b.py",
+    "guide": "curriculum/assignments/07b.md",
+    "test_functions": [
+      "test_three_format_parsing_and_provenance",
+      "test_empty_or_unsupported_file_is_visible",
+      "test_changed_source_changes_identity"
+    ],
+    "evidence": [
+      "Ingest Markdown plus a PDF into actual pgvector; inspect parsed PDF numbers/page citations.",
+      "Run an installed local generator on paraphrases/numbers/unsupported/adversarial questions; review every claim and access outcome."
+    ]
+  },
+  {
+    "id": "08a",
+    "starter": "curriculum/assignments/starters/08a.py",
+    "tests": "tests/independent/test_08a.py",
+    "reference": "curriculum/assignments/reference_adapters/08a.py",
+    "guide": "curriculum/assignments/08a.md",
+    "test_functions": [
+      "test_typed_tool_success_and_budgets",
+      "test_unknown_tool_bad_arguments_and_tenant_spoofing"
+    ],
+    "evidence": [
+      "Inject actual dependency unavailability and bounded timeouts; review trace, termination, and approval records."
+    ]
+  },
+  {
+    "id": "08b",
+    "starter": "curriculum/assignments/starters/08b.py",
+    "tests": "tests/independent/test_08b.py",
+    "reference": "curriculum/assignments/reference_adapters/08b.py",
+    "guide": "curriculum/assignments/08b.md",
+    "test_functions": [
+      "test_graph_interrupt_fingerprint_and_isolation",
+      "test_durable_review_reopen_and_single_use"
+    ],
+    "evidence": [
+      "Compare the plain workflow with graph and two-worker runs; report correctness/calls/latency and actual model cost if models are used."
+    ]
+  },
+  {
+    "id": "09a",
+    "starter": "curriculum/assignments/starters/09a.py",
+    "tests": "tests/independent/test_09a.py",
+    "reference": "curriculum/assignments/reference_adapters/09a.py",
+    "guide": "curriculum/assignments/09a.md",
+    "test_functions": [
+      "test_all_memory_scenarios_and_weight_units",
+      "test_context_changes_cache_not_weights"
+    ],
+    "evidence": [
+      "Measure physical RAM, model-process/GPU usage, precision and context on your own host; compare with estimates."
+    ]
+  },
+  {
+    "id": "09b",
+    "starter": "curriculum/assignments/starters/09b.py",
+    "tests": "tests/independent/test_09b.py",
+    "reference": "curriculum/assignments/reference_adapters/09b.py",
+    "guide": "curriculum/assignments/09b.md",
+    "test_functions": [
+      "test_success_lengths_tokens_and_percentiles",
+      "test_failures_are_preserved",
+      "test_no_tokens_means_unknown_throughput"
+    ],
+    "evidence": [
+      "Save >=30 verified warm and >=30 explicitly defined cold model observations, model/machine metadata, failures, output lengths, p50/p95.",
+      "Repeat on vLLM only where supported; do not call non-streaming latency TTFT."
+    ]
+  },
+  {
+    "id": "10a",
+    "starter": "curriculum/assignments/starters/10a.py",
+    "tests": "tests/independent/test_10a.py",
+    "reference": "curriculum/assignments/reference_adapters/10a.py",
+    "guide": "curriculum/assignments/10a.md",
+    "test_functions": [
+      "test_injected_failure_report_and_restore"
+    ],
+    "evidence": [
+      "Induce live database/model outages and capacity exhaustion; record statuses/latency/safe logs, recovery, and retry duplication risk."
+    ]
+  },
+  {
+    "id": "10b",
+    "starter": "curriculum/assignments/starters/10b.py",
+    "tests": "tests/independent/test_10b.py",
+    "reference": "curriculum/assignments/reference_adapters/10b.py",
+    "guide": "curriculum/assignments/10b.md",
+    "test_functions": [
+      "test_backup_restores_data_to_new_database",
+      "test_existing_restore_destination_is_preserved"
+    ],
+    "evidence": [
+      "Run Compose API/PostgreSQL, restart and verify persistence, back up and restore into a separate PostgreSQL database.",
+      "Record CI, immutable release/image identity, Coolify HTTPS/private-network setup, and an actually rehearsed compatible rollback."
+    ]
+  },
+  {
+    "id": "11a",
+    "starter": "curriculum/assignments/starters/11a.py",
+    "tests": "tests/independent/test_11a.py",
+    "reference": "curriculum/assignments/reference_adapters/11a.py",
+    "guide": "curriculum/assignments/11a.md",
+    "test_functions": [
+      "test_streaming_total_against_independent_reference",
+      "test_invalid_batch_size"
+    ],
+    "evidence": [
+      "Compare the streaming reference with Spark and explain retained memory, shuffle, broadcast, and skew."
+    ]
+  },
+  {
+    "id": "11b",
+    "starter": "curriculum/assignments/starters/11b.py",
+    "tests": "tests/independent/test_11b.py",
+    "reference": "curriculum/assignments/reference_adapters/11b.py",
+    "guide": "curriculum/assignments/11b.md",
+    "test_functions": [
+      "test_reconciliation_reference_before_spark",
+      "test_actual_partition_skew_and_broadcast_experiment"
+    ],
+    "evidence": [
+      "Run the opt-in local Spark test and full million-row job including Parquet/trends/anomalies/windows.",
+      "Repeat on an actual remote cluster before claiming distributed operational experience."
+    ]
+  },
+  {
+    "id": "12a",
+    "starter": "curriculum/assignments/starters/12a.py",
+    "tests": "tests/independent/test_12a.py",
+    "reference": "curriculum/assignments/reference_adapters/12a.py",
+    "guide": "curriculum/assignments/12a.md",
+    "test_functions": [
+      "test_attack_suite_has_explicit_cases",
+      "test_threat_model_contains_controls_and_limits",
+      "test_observed_attacks_and_allowed_controls"
+    ],
+    "evidence": [
+      "Review malicious-document, forged-citation, poisoned-number, supply-chain, and real-model residual risks; do not infer model resistance from HTTP tests alone."
+    ]
+  },
+  {
+    "id": "12b",
+    "starter": "curriculum/assignments/starters/12b.py",
+    "tests": "tests/independent/test_12b.py",
+    "reference": "curriculum/assignments/reference_adapters/12b.py",
+    "guide": "curriculum/assignments/12b.md",
+    "test_functions": [
+      "test_allowed_denied_warm_cache_and_revocation",
+      "test_every_endpoint_has_two_tenants_and_anonymous_checks"
+    ],
+    "evidence": [
+      "Check document/citation fetches, saved graph state, logs, and protected backups; repeat revocation across every deployed worker."
+    ]
+  },
+  {
+    "id": "13a",
+    "starter": "curriculum/assignments/starters/13a.py",
+    "tests": "tests/independent/test_13a.py",
+    "reference": "curriculum/assignments/reference_adapters/13a.py",
+    "guide": "curriculum/assignments/13a.md",
+    "test_functions": [
+      "test_labels_unique_and_group_disjoint",
+      "test_gold_values_recomputed_from_source"
+    ],
+    "evidence": [
+      "Human-review labels including denial/unsupported/multi-source/dependency failures; lock holdout before tuning and grow to 100\u2013500 curated capstone cases."
+    ]
+  },
+  {
+    "id": "13b",
+    "starter": "curriculum/assignments/starters/13b.py",
+    "tests": "tests/independent/test_13b.py",
+    "reference": "curriculum/assignments/reference_adapters/13b.py",
+    "guide": "curriculum/assignments/13b.md",
+    "test_functions": [
+      "test_paired_bootstrap_known_difference_and_groups",
+      "test_gate_cannot_hide_access_or_citation_failure",
+      "test_invalid_comparison"
+    ],
+    "evidence": [
+      "Run the evaluation CLI on an intentionally regressed candidate and confirm nonzero exit; compare fixed labels across chunk sizes/models with source-group uncertainty."
+    ]
+  },
+  {
+    "id": "14a",
+    "starter": "curriculum/assignments/starters/14a.py",
+    "tests": "tests/independent/test_14a.py",
+    "reference": "curriculum/assignments/reference_adapters/14a.py",
+    "guide": "curriculum/assignments/14a.md",
+    "test_functions": [
+      "test_ratios_and_sources",
+      "test_incompatible_units_or_missing_year_has_no_growth",
+      "test_unbalanced_or_duplicate_statement_rejected"
+    ],
+    "evidence": [
+      "Explain all ratio/scale/denominator conventions and trace each result to its source rows."
+    ]
+  },
+  {
+    "id": "14b",
+    "starter": "curriculum/assignments/starters/14b.py",
+    "tests": "tests/independent/test_14b.py",
+    "reference": "curriculum/assignments/reference_adapters/14b.py",
+    "guide": "curriculum/assignments/14b.md",
+    "test_functions": [
+      "test_asof_only_previously_published_within_company",
+      "test_position_precedes_return_and_costs_reduce_wealth"
+    ],
+    "evidence": [
+      "Run chronological walk-forward folds versus a naive baseline; show publication-time availability and explain gaps/data vintages."
+    ]
+  },
+  {
+    "id": "15a",
+    "starter": "curriculum/assignments/starters/15a.py",
+    "tests": "tests/independent/test_15a.py",
+    "reference": "curriculum/assignments/reference_adapters/15a.py",
+    "guide": "curriculum/assignments/15a.md",
+    "test_functions": [
+      "test_report_via_http_and_tampered_values"
+    ],
+    "evidence": [
+      "Run the selected local-model narrative from verified numbers, checking claim-level sources and unknowns; record actual dependency failures."
+    ]
+  },
+  {
+    "id": "15b",
+    "starter": "curriculum/assignments/starters/15b.py",
+    "tests": "tests/independent/test_15b.py",
+    "reference": "curriculum/assignments/reference_adapters/15b.py",
+    "guide": "curriculum/assignments/15b.md",
+    "test_functions": [
+      "test_unseen_feature_calculation_and_both_sources",
+      "test_missing_nonpositive_and_incompatible_history",
+      "test_nonfinite_data_is_rejected"
+    ],
+    "evidence": [
+      "Implement a different unseen request in a timed 90-minute closed-book attempt.",
+      "Perform an actual outage/restore drill; have another person reproduce the project; revisit weak points after 7/30 days."
+    ]
+  }
+]

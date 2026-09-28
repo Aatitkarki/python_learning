@@ -1,5 +1,9 @@
 # Extended practice and worked-answer guide
 
+<!-- question-answer-index -->
+**Looking for a particular answer?** [Question-by-question solutions](ANSWER_INDEX.md) includes notebook exercises, explanations, independent assignments, and project tasks.
+
+
 These are the larger assignments referenced by notebook “Independent transfer” sections. Attempt them in work/ before reading the approach. The checked notebook answers cover the smaller functions; the project scripts show runnable end-to-end examples. For experiments, the answer is a reproducible method and an honest interpretation, not a predetermined favorable score.
 
 ## 00–01: programming extensions

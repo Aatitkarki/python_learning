@@ -170,3 +170,7 @@ progress += ['\n## Session log template\n\nDate / stage / minutes / goal / what 
 if not (ROOT/'progress.md').exists():
     (ROOT/'progress.md').write_text('\n'.join(progress)+'\n')
 print('Built 16 stage guides, 16 briefs, 16 answer guides, coverage map, 80-week plan, and progress tracker.')
+
+# Regenerate the reference indexes after guides so navigation stays complete.
+from build_answer_index import main as build_answer_index
+build_answer_index()

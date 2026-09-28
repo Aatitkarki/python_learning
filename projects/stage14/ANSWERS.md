@@ -1,5 +1,9 @@
 # Stage 14 — worked project answer
 
+<!-- question-answer-index -->
+**Looking for a particular answer?** [Question-by-question solutions](SOLUTIONS.md) includes notebook exercises, explanations, independent assignments, and project tasks.
+
+
 Read after saving your own attempt. The reference is one implementation, not the only acceptable design.
 
 ## Reference artifacts

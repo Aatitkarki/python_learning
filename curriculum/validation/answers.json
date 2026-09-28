@@ -1,0 +1,357 @@
+{
+  "date": "2026-09-28",
+  "python": "3.12.13",
+  "platform": "macOS-26.0-arm64-arm-64bit",
+  "coverage": {
+    "answers": 304,
+    "counts": {
+      "exercise": 108,
+      "oral": 72,
+      "transfer": 36,
+      "project": 72,
+      "gate": 16
+    },
+    "status": "passed"
+  },
+  "pytest": {
+    "command": "python -m pytest -q",
+    "passed": 79,
+    "failed": 0
+  },
+  "exported_exercise_scripts": [
+    {
+      "id": "00a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "01a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "01b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "01c",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "01d",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "02a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "02b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "02c",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "03a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "03b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "03c",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "04a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "04b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "05a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "05b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "06a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "06b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "06c",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "07a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "07b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "08a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "08b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "09a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "09b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "10a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "10b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "11a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "11b",
+      "status": "passed",
+      "reason": "Ran separately with full Java 21 JDK and local socket permission"
+    },
+    {
+      "id": "12a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "12b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "13a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "13b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "14a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "14b",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "15a",
+      "status": "passed",
+      "stderr": ""
+    },
+    {
+      "id": "15b",
+      "status": "passed",
+      "stderr": ""
+    }
+  ],
+  "new_labs": [
+    {
+      "module": "stage02.math_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage03.data_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage04.experiments",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage05.experiments",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage06.attention_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage06.cache_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage07.retrieval_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage08.workflow_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage09.benchmark",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage10.failure_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage11.partition_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage12.security_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage13.evaluation_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage14.finance_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    },
+    {
+      "module": "stage15.report_lab",
+      "passed": true,
+      "stderr": "",
+      "output": ""
+    }
+  ],
+  "additional_checks": {
+    "saved_pipeline_http_roundtrip": "passed",
+    "security_endpoint_matrix": {
+      "rows": 50,
+      "passed": true
+    },
+    "financial_prior_source_provenance": "passed",
+    "generator_idempotence": "passed",
+    "learner_files_unchanged": 73
+  },
+  "local_spark": {
+    "runs": [
+      {
+        "partitions": 2,
+        "seconds": 1.6616169580083806,
+        "total_cents": 4999500000
+      },
+      {
+        "partitions": 8,
+        "seconds": 0.22202529199421406,
+        "total_cents": 4999500000
+      },
+      {
+        "partitions": 32,
+        "seconds": 0.38610970898298547,
+        "total_cents": 4999500000
+      }
+    ],
+    "skew_counts": [
+      {
+        "key": 0,
+        "count": 920000
+      },
+      {
+        "key": 10,
+        "count": 20000
+      },
+      {
+        "key": 30,
+        "count": 20000
+      },
+      {
+        "key": 20,
+        "count": 20000
+      },
+      {
+        "key": 40,
+        "count": 20000
+      }
+    ],
+    "salted_totals_match": true,
+    "broadcast_join_rows": 1000000
+  },
+  "not_run": [
+    "Live PostgreSQL/pgvector SQL worksheet and integration",
+    "Downloaded pretrained/embedding/reranker models",
+    "QLoRA on CUDA",
+    "Ollama/vLLM cold/warm model serving",
+    "Docker/Coolify deployment and PostgreSQL restore",
+    "Remote Spark cluster",
+    "Independent learner gate or peer reproduction"
+  ]
+}

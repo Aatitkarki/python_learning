@@ -1,0 +1,13 @@
+{
+  "before_save": [
+    "access",
+    "billing"
+  ],
+  "after_reload_via_http": [
+    "access",
+    "billing"
+  ],
+  "invalid_status": 422,
+  "artifact_sha256": "7d39994d7e29100a7ad09ef43379432c65903b4f239e3b939c111714873039bc",
+  "limitations": "Fixed logistic model for artifact mechanics; scores uncalibrated. Never load untrusted joblib files."
+}

@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-28",
+  "python": "3.12.13",
+  "notebook_enrichment": {
+    "notebooks": 72,
+    "lessons": 36,
+    "concept_words": 13297,
+    "added_cell_kinds": [
+      "concepts",
+      "assignment-tests"
+    ],
+    "all_original_cells_and_outputs_preserved": true,
+    "other_learner_files_byte_identical": 38,
+    "idempotent_rerun": true,
+    "backup_directory": "work/backups/notebook-enrichment/20260928T075751670834Z"
+  },
+  "assignment_tests": {
+    "packs": 36,
+    "offline_passed": 143,
+    "offline_skipped": 1,
+    "skip_reason": "Opt-in actual Spark check",
+    "separate_spark_run": {
+      "passed": 2,
+      "includes_repeated_offline_precheck": true,
+      "real_integration_passed": true
+    },
+    "reference_command": "python tools/test_assignment.py --all --reference",
+    "learner_target_positive_and_negative_controls": "passed",
+    "missing_learner_file_does_not_use_reference": true,
+    "single_function_selection": "5 calculator cases passed"
+  },
+  "regression_tests": {
+    "passed": 84,
+    "ordinary_pytest_assignment_skips": 144,
+    "explanation": "Assignment packs require an explicit learner target or --reference; run separately as above."
+  },
+  "material_checks": {
+    "valid_notebooks": 72,
+    "assignment_packs": 36,
+    "embedded_local_links": 360,
+    "future_generator_templates_validated_without_writing": 72
+  },
+  "limits": [
+    "Offline report/shape checks do not prove every internal modeling choice; manual evidence remains required.",
+    "Live PostgreSQL, learned model downloads, QLoRA, local model serving, Docker/Coolify, and remote Spark were not newly executed.",
+    "No learner independent mastery, timed defense, or peer reproduction is claimed."
+  ]
+}

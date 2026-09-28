@@ -1,5 +1,14 @@
 # Start here — your AI engineering course
 
+<!-- beginner-concepts-and-assignment-tests -->
+**New to the concepts?** Every course notebook now includes a beginner explanation before its exercises. Start with the [math bridge](curriculum/MATH_START_HERE.md) if arithmetic or algebra is unfamiliar.
+
+**Test your independent work:** use the [assignment test packs and blank starters](curriculum/assignments/README.md). The runner checks your chosen Python file; a reference-answer pass does not assess your work.
+
+<!-- question-answer-index -->
+**Looking for a particular answer?** [Question-by-question solutions](curriculum/ANSWER_INDEX.md) includes notebook exercises, explanations, independent assignments, and project tasks.
+
+
 This course turns [your original README](readme.md) into a beginner-to-advanced learning path with **36 practice notebooks, 36 worked-answer notebooks, 108 checked exercises, and 16 practical project stages**. It follows your choice to start from Python basics.
 
 Budget **1,200 hours**, or about **80 weeks at 15 hours/week**. Move forward when you can build, debug, and explain the stage independently. Completing files by copying answers will not establish mastery; use the assessments and delayed reviews to check your understanding.

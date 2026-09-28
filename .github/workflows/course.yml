@@ -8,8 +8,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install -r requirements/core.txt -r requirements/deep.txt -r requirements/agents.txt
+      - run: python -m pip install -r requirements/core.txt -r requirements/deep.txt -r requirements/agents.txt -r requirements/integration.txt
       - run: python tools/check_course.py --kernel
+      - run: python tools/check_answers.py
+      - run: python tools/check_learning_materials.py
+      - run: python tools/check_links.py
       - run: python -m pytest -q
+      - run: python tools/test_assignment.py --all --reference
       - run: python -m projects.stage13.solution --split dev
       - run: docker build -f projects/stage10/Dockerfile .

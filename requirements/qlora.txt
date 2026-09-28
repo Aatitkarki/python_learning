@@ -1,0 +1,3 @@
+# Optional CUDA lab. Not needed for the beginner path or offline verification.
+-r deep.txt
+bitsandbytes>=0.43,<1
